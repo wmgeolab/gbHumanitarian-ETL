@@ -21,7 +21,7 @@ gitData = "/sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/
 @flow(name='Check and Pull',flow_run_name="{branchname}",log_prints=True)
 def submit_to_github(branchname, title, body, src, dst, basename_hash):
     # init
-    g = Github(config('GITHUB_TOKEN', default='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'))
+    g = Github(config('GITHUB_TOKEN',))
     upstream = g.get_repo('rohith4444/geoBoundaries') # upstream
     upstream_branch = 'main'
     # get or create the fork
