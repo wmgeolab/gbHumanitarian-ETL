@@ -1,0 +1,129 @@
+03:55:09.735 | INFO    | prefect.engine - Created flow run 'tiny-fulmar' for flow 'HumETLFour'
+03:55:09.739 | INFO    | Flow run 'tiny-fulmar' - View at https://app.prefect.cloud/account/c9e94111-cc27-49db-a2da-12760be07c27/workspace/b5d9651e-5a12-48b7-9824-c75a5b759368/flow-runs/flow-run/824655e2-e919-4169-a35d-ab08bf0acddc
+03:55:10.711 | INFO    | Flow run 'caf' - cod-ab-caf
+03:55:10.889 | INFO    | Flow run 'caf' - https://data.humdata.org/dataset/78d80f16-b9ff-49cd-8195-d96efcf3b669/resource/e5271f2d-1829-4fcd-9a1f-e6d034074d25/download/caf_admbnda_adm0_200k_sigcaf_reach_itos_v2.zip
+03:55:12.276 | INFO    | Flow run 'caf' - Resource URL https://data.humdata.org/dataset/78d80f16-b9ff-49cd-8195-d96efcf3b669/resource/e5271f2d-1829-4fcd-9a1f-e6d034074d25/download/caf_admbnda_adm0_200k_sigcaf_reach_itos_v2.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF
+03:55:12.312 | INFO    | Flow run 'caf' - https://data.humdata.org/dataset/78d80f16-b9ff-49cd-8195-d96efcf3b669/resource/b3e8f5e9-3546-475e-924f-4be91f88b12c/download/caf_admbnda_adm1_200k_sigcaf_reach_itos_v2.zip
+03:55:13.457 | INFO    | Flow run 'caf' - Resource URL https://data.humdata.org/dataset/78d80f16-b9ff-49cd-8195-d96efcf3b669/resource/b3e8f5e9-3546-475e-924f-4be91f88b12c/download/caf_admbnda_adm1_200k_sigcaf_reach_itos_v2.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF
+03:55:13.487 | INFO    | Flow run 'caf' - https://data.humdata.org/dataset/78d80f16-b9ff-49cd-8195-d96efcf3b669/resource/ddc54c62-2c0c-4b5b-9864-0a6ff747e4fc/download/caf_admbnda_adm2_200k_sigcaf_reach_itos_v2.zip
+03:55:14.630 | INFO    | Flow run 'caf' - Resource URL https://data.humdata.org/dataset/78d80f16-b9ff-49cd-8195-d96efcf3b669/resource/ddc54c62-2c0c-4b5b-9864-0a6ff747e4fc/download/caf_admbnda_adm2_200k_sigcaf_reach_itos_v2.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF
+03:55:14.663 | INFO    | Flow run 'caf' - https://data.humdata.org/dataset/78d80f16-b9ff-49cd-8195-d96efcf3b669/resource/f1faa825-b2b9-4677-b819-99fa4cb971ae/download/caf_admbnda_adm3_200k_sigcaf_reach_itos_v2.zip
+03:55:15.682 | INFO    | Flow run 'caf' - Resource URL https://data.humdata.org/dataset/78d80f16-b9ff-49cd-8195-d96efcf3b669/resource/f1faa825-b2b9-4677-b819-99fa4cb971ae/download/caf_admbnda_adm3_200k_sigcaf_reach_itos_v2.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF
+03:55:15.725 | INFO    | Flow run 'caf' - https://data.humdata.org/dataset/78d80f16-b9ff-49cd-8195-d96efcf3b669/resource/6b6f2169-5863-4894-b800-76e8dbca1497/download/caf_admbnda_adm4_reach_ocha_v2.zip
+03:55:16.920 | INFO    | Flow run 'caf' - Resource URL https://data.humdata.org/dataset/78d80f16-b9ff-49cd-8195-d96efcf3b669/resource/6b6f2169-5863-4894-b800-76e8dbca1497/download/caf_admbnda_adm4_reach_ocha_v2.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF
+03:55:17.183 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm0_200k_sigcaf_reach_itos_v2.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM0
+03:55:17.188 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm0_200k_sigcaf_reach_itos_v2.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM0
+03:55:17.192 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm0_200k_sigcaf_reach_itos_v2.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM0
+03:55:17.197 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm0_200k_sigcaf_reach_itos_v2.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM0
+03:55:17.201 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm0_200k_sigcaf_reach_itos_v2.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM0
+03:55:17.204 | INFO    | Flow run 'caf' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM0 and added text
+03:55:17.218 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm1_200k_sigcaf_reach_itos_v2.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM1
+03:55:17.222 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm1_200k_sigcaf_reach_itos_v2.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM1
+03:55:17.227 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm1_200k_sigcaf_reach_itos_v2.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM1
+03:55:17.233 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm1_200k_sigcaf_reach_itos_v2.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM1
+03:55:17.238 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm1_200k_sigcaf_reach_itos_v2.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM1
+03:55:17.241 | INFO    | Flow run 'caf' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM1 and added text
+03:55:17.255 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm2_200k_sigcaf_reach_itos_v2.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM2
+03:55:17.260 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm2_200k_sigcaf_reach_itos_v2.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM2
+03:55:17.264 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm2_200k_sigcaf_reach_itos_v2.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM2
+03:55:17.274 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm2_200k_sigcaf_reach_itos_v2.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM2
+03:55:17.279 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm2_200k_sigcaf_reach_itos_v2.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM2
+03:55:17.282 | INFO    | Flow run 'caf' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM2 and added text
+03:55:17.296 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm3_200k_sigcaf_reach_itos_v2.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM3
+03:55:17.301 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm3_200k_sigcaf_reach_itos_v2.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM3
+03:55:17.305 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm3_200k_sigcaf_reach_itos_v2.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM3
+03:55:17.320 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm3_200k_sigcaf_reach_itos_v2.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM3
+03:55:17.325 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm3_200k_sigcaf_reach_itos_v2.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM3
+03:55:17.327 | INFO    | Flow run 'caf' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM3 and added text
+03:55:17.332 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm4_reach_ocha_v2.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM4
+03:55:17.337 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm4_reach_ocha_v2.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM4
+03:55:17.342 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm4_reach_ocha_v2.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM4
+03:55:17.347 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm4_reach_ocha_v2.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM4
+03:55:17.351 | INFO    | Flow run 'caf' - Copied caf_admbnda_adm4_reach_ocha_v2.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM4
+03:55:17.354 | INFO    | Flow run 'caf' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM4 and added text
+03:55:17.365 | INFO    | Flow run 'caf' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM0 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/CAF_ADM0.zip
+03:55:17.392 | INFO    | Flow run 'caf' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM1 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/CAF_ADM1.zip
+03:55:17.471 | INFO    | Flow run 'caf' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM2 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/CAF_ADM2.zip
+03:55:17.600 | INFO    | Flow run 'caf' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM3 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/CAF_ADM3.zip
+03:55:17.618 | INFO    | Flow run 'caf' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CAF/CAF_SPT/CAF_ADM4 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/CAF_ADM4.zip
+03:55:17.735 | INFO    | Flow run 'tiny-fulmar' - Finished in state Completed()
+03:55:18.198 | INFO    | prefect.engine - Created flow run 'speedy-mole' for flow 'HumETLFour'
+03:55:18.199 | INFO    | Flow run 'speedy-mole' - View at https://app.prefect.cloud/account/c9e94111-cc27-49db-a2da-12760be07c27/workspace/b5d9651e-5a12-48b7-9824-c75a5b759368/flow-runs/flow-run/355f1260-c3ab-4a3c-9146-7583a62e4899
+03:55:18.733 | INFO    | Flow run 'tcd' - cod-ab-tcd
+03:55:18.816 | INFO    | Flow run 'tcd' - https://data.humdata.org/dataset/f01c8222-b67d-41ff-954a-731aafd4466b/resource/105202a3-aa8f-473f-a2f8-98ea5993a44f/download/tcd_admbnda_adm0_ocha.zip
+03:55:20.276 | INFO    | Flow run 'tcd' - Resource URL https://data.humdata.org/dataset/f01c8222-b67d-41ff-954a-731aafd4466b/resource/105202a3-aa8f-473f-a2f8-98ea5993a44f/download/tcd_admbnda_adm0_ocha.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD
+03:55:20.316 | INFO    | Flow run 'tcd' - https://data.humdata.org/dataset/f01c8222-b67d-41ff-954a-731aafd4466b/resource/ea0c26da-317f-45b9-8714-d63117d3f72a/download/tcd_admbnda_adm1_ocha.zip
+03:55:21.461 | INFO    | Flow run 'tcd' - Resource URL https://data.humdata.org/dataset/f01c8222-b67d-41ff-954a-731aafd4466b/resource/ea0c26da-317f-45b9-8714-d63117d3f72a/download/tcd_admbnda_adm1_ocha.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD
+03:55:21.479 | INFO    | Flow run 'tcd' - https://data.humdata.org/dataset/f01c8222-b67d-41ff-954a-731aafd4466b/resource/c8d6b972-fdc0-42e4-b2ca-3b41a8a82757/download/tcd_admbnda_adm2_ocha_20170615.zip
+03:55:22.594 | INFO    | Flow run 'tcd' - Resource URL https://data.humdata.org/dataset/f01c8222-b67d-41ff-954a-731aafd4466b/resource/c8d6b972-fdc0-42e4-b2ca-3b41a8a82757/download/tcd_admbnda_adm2_ocha_20170615.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD
+03:55:22.616 | INFO    | Flow run 'tcd' - https://data.humdata.org/dataset/f01c8222-b67d-41ff-954a-731aafd4466b/resource/c48a5d3b-2ace-4a25-b436-2b00f0ffe031/download/tcd_a_admbnd_adm3_ocha.zip
+03:55:23.618 | INFO    | Flow run 'tcd' - Resource URL https://data.humdata.org/dataset/f01c8222-b67d-41ff-954a-731aafd4466b/resource/c48a5d3b-2ace-4a25-b436-2b00f0ffe031/download/tcd_a_admbnd_adm3_ocha.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD
+03:55:23.797 | INFO    | Flow run 'tcd' - Copied tcd_admbnda_adm0_ocha.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM0
+03:55:23.802 | INFO    | Flow run 'tcd' - Copied tcd_admbnda_adm0_ocha.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM0
+03:55:23.807 | INFO    | Flow run 'tcd' - Copied tcd_admbnda_adm0_ocha.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM0
+03:55:23.812 | INFO    | Flow run 'tcd' - Copied tcd_admbnda_adm0_ocha.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM0
+03:55:23.817 | INFO    | Flow run 'tcd' - Copied tcd_admbnda_adm0_ocha.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM0
+03:55:23.820 | INFO    | Flow run 'tcd' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM0 and added text
+03:55:23.825 | INFO    | Flow run 'tcd' - Copied tcd_admbnda_adm1_ocha.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM1
+03:55:23.830 | INFO    | Flow run 'tcd' - Copied tcd_admbnda_adm1_ocha.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM1
+03:55:23.834 | INFO    | Flow run 'tcd' - Copied tcd_admbnda_adm1_ocha.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM1
+03:55:23.840 | INFO    | Flow run 'tcd' - Copied tcd_admbnda_adm1_ocha.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM1
+03:55:23.844 | INFO    | Flow run 'tcd' - Copied tcd_admbnda_adm1_ocha.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM1
+03:55:23.847 | INFO    | Flow run 'tcd' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM1 and added text
+03:55:23.852 | INFO    | Flow run 'tcd' - Copied tcd_admbnda_adm2_ocha_20170615.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM2
+03:55:23.856 | INFO    | Flow run 'tcd' - Copied tcd_admbnda_adm2_ocha_20170615.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM2
+03:55:23.860 | INFO    | Flow run 'tcd' - Copied tcd_admbnda_adm2_ocha_20170615.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM2
+03:55:23.866 | INFO    | Flow run 'tcd' - Copied tcd_admbnda_adm2_ocha_20170615.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM2
+03:55:23.885 | INFO    | Flow run 'tcd' - Copied tcd_admbnda_adm2_ocha_20170615.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM2
+03:55:23.888 | INFO    | Flow run 'tcd' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM2 and added text
+03:55:23.893 | INFO    | Flow run 'tcd' - Copied tcd_a_admbnd_adm3_ocha.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM3
+03:55:23.898 | INFO    | Flow run 'tcd' - Copied tcd_a_admbnd_adm3_ocha.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM3
+03:55:23.902 | INFO    | Flow run 'tcd' - Copied tcd_a_admbnd_adm3_ocha.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM3
+03:55:23.907 | INFO    | Flow run 'tcd' - Copied tcd_a_admbnd_adm3_ocha.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM3
+03:55:23.911 | INFO    | Flow run 'tcd' - Copied tcd_a_admbnd_adm3_ocha.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM3
+03:55:23.914 | INFO    | Flow run 'tcd' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM3 and added text
+03:55:23.928 | INFO    | Flow run 'tcd' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM0 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/TCD_ADM0.zip
+03:55:23.946 | INFO    | Flow run 'tcd' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM1 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/TCD_ADM1.zip
+03:55:23.967 | INFO    | Flow run 'tcd' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM2 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/TCD_ADM2.zip
+03:55:23.973 | INFO    | Flow run 'tcd' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/TCD/TCD_SPT/TCD_ADM3 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/TCD_ADM3.zip
+03:55:24.127 | INFO    | Flow run 'speedy-mole' - Finished in state Completed()
+03:55:24.489 | INFO    | prefect.engine - Created flow run 'magenta-goshawk' for flow 'HumETLFour'
+03:55:24.490 | INFO    | Flow run 'magenta-goshawk' - View at https://app.prefect.cloud/account/c9e94111-cc27-49db-a2da-12760be07c27/workspace/b5d9651e-5a12-48b7-9824-c75a5b759368/flow-runs/flow-run/e8108970-c66f-444f-81c3-1ae2bebb1172
+03:55:24.972 | INFO    | Flow run 'civ' - cod-ab-civ
+03:55:25.149 | INFO    | Flow run 'civ' - https://data.humdata.org/dataset/503a9167-ba56-4174-b160-bdb0fb703719/resource/080ad3f1-103e-4309-9476-332214f324c7/download/civ_admbnda_adm0_cntig_20180706.zip
+03:55:26.291 | INFO    | Flow run 'civ' - Resource URL https://data.humdata.org/dataset/503a9167-ba56-4174-b160-bdb0fb703719/resource/080ad3f1-103e-4309-9476-332214f324c7/download/civ_admbnda_adm0_cntig_20180706.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV
+03:55:26.329 | INFO    | Flow run 'civ' - https://data.humdata.org/dataset/503a9167-ba56-4174-b160-bdb0fb703719/resource/5f5d6729-d02f-4031-9712-1ffb903b2dd0/download/civ_admbnda_adm1_cntig_ocha_itos_20180706.zip
+03:55:27.519 | INFO    | Flow run 'civ' - Resource URL https://data.humdata.org/dataset/503a9167-ba56-4174-b160-bdb0fb703719/resource/5f5d6729-d02f-4031-9712-1ffb903b2dd0/download/civ_admbnda_adm1_cntig_ocha_itos_20180706.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV
+03:55:27.562 | INFO    | Flow run 'civ' - https://data.humdata.org/dataset/503a9167-ba56-4174-b160-bdb0fb703719/resource/9cb9e591-cd37-417c-aac8-e2ccc344da8e/download/civ_admbnda_adm2_cntig_ocha_itos_20180706.zip
+03:55:28.812 | INFO    | Flow run 'civ' - Resource URL https://data.humdata.org/dataset/503a9167-ba56-4174-b160-bdb0fb703719/resource/9cb9e591-cd37-417c-aac8-e2ccc344da8e/download/civ_admbnda_adm2_cntig_ocha_itos_20180706.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV
+03:55:28.856 | INFO    | Flow run 'civ' - https://data.humdata.org/dataset/503a9167-ba56-4174-b160-bdb0fb703719/resource/07ff93d9-b804-4db5-9f71-560809233e48/download/civ_admbnda_adm3_cntig_ocha_itos_20180706.zip
+03:55:30.242 | INFO    | Flow run 'civ' - Resource URL https://data.humdata.org/dataset/503a9167-ba56-4174-b160-bdb0fb703719/resource/07ff93d9-b804-4db5-9f71-560809233e48/download/civ_admbnda_adm3_cntig_ocha_itos_20180706.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV
+03:55:30.458 | INFO    | Flow run 'civ' - Copied civ_admbnda_adm0_cntig_20180706.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM0
+03:55:30.463 | INFO    | Flow run 'civ' - Copied civ_admbnda_adm0_cntig_20180706.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM0
+03:55:30.467 | INFO    | Flow run 'civ' - Copied civ_admbnda_adm0_cntig_20180706.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM0
+03:55:30.472 | INFO    | Flow run 'civ' - Copied civ_admbnda_adm0_cntig_20180706.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM0
+03:55:30.477 | INFO    | Flow run 'civ' - Copied civ_admbnda_adm0_cntig_20180706.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM0
+03:55:30.480 | INFO    | Flow run 'civ' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM0 and added text
+03:55:30.492 | INFO    | Flow run 'civ' - Copied civ_admbnda_adm1_cntig_ocha_itos_20180706.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM1
+03:55:30.497 | INFO    | Flow run 'civ' - Copied civ_admbnda_adm1_cntig_ocha_itos_20180706.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM1
+03:55:30.502 | INFO    | Flow run 'civ' - Copied civ_admbnda_adm1_cntig_ocha_itos_20180706.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM1
+03:55:30.516 | INFO    | Flow run 'civ' - Copied civ_admbnda_adm1_cntig_ocha_itos_20180706.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM1
+03:55:30.521 | INFO    | Flow run 'civ' - Copied civ_admbnda_adm1_cntig_ocha_itos_20180706.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM1
+03:55:30.524 | INFO    | Flow run 'civ' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM1 and added text
+03:55:30.535 | INFO    | Flow run 'civ' - Copied civ_admbnda_adm2_cntig_ocha_itos_20180706.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM2
+03:55:30.540 | INFO    | Flow run 'civ' - Copied civ_admbnda_adm2_cntig_ocha_itos_20180706.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM2
+03:55:30.544 | INFO    | Flow run 'civ' - Copied civ_admbnda_adm2_cntig_ocha_itos_20180706.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM2
+03:55:30.560 | INFO    | Flow run 'civ' - Copied civ_admbnda_adm2_cntig_ocha_itos_20180706.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM2
+03:55:30.565 | INFO    | Flow run 'civ' - Copied civ_admbnda_adm2_cntig_ocha_itos_20180706.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM2
+03:55:30.568 | INFO    | Flow run 'civ' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM2 and added text
+03:55:30.584 | INFO    | Flow run 'civ' - Copied civ_admbnda_adm3_cntig_ocha_itos_20180706.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM3
+03:55:30.590 | INFO    | Flow run 'civ' - Copied civ_admbnda_adm3_cntig_ocha_itos_20180706.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM3
+03:55:30.595 | INFO    | Flow run 'civ' - Copied civ_admbnda_adm3_cntig_ocha_itos_20180706.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM3
+03:55:30.617 | INFO    | Flow run 'civ' - Copied civ_admbnda_adm3_cntig_ocha_itos_20180706.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM3
+03:55:30.622 | INFO    | Flow run 'civ' - Copied civ_admbnda_adm3_cntig_ocha_itos_20180706.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM3
+03:55:30.625 | INFO    | Flow run 'civ' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM3 and added text
+03:55:30.646 | INFO    | Flow run 'civ' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM0 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/CIV_ADM0.zip
+03:55:30.767 | INFO    | Flow run 'civ' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM1 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/CIV_ADM1.zip
+03:55:30.961 | INFO    | Flow run 'civ' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM2 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/CIV_ADM2.zip
+03:55:31.279 | INFO    | Flow run 'civ' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/CIV/CIV_SPT/CIV_ADM3 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/CIV_ADM3.zip
+03:55:31.404 | INFO    | Flow run 'magenta-goshawk' - Finished in state Completed()

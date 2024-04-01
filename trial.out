@@ -1,0 +1,4 @@
+15:17:27.888 | INFO    | prefect.engine - Created flow run 'lilac-mongrel' for flow 'trial'
+15:17:27.892 | INFO    | Flow run 'lilac-mongrel' - View at https://app.prefect.cloud/account/c9e94111-cc27-49db-a2da-12760be07c27/workspace/b5d9651e-5a12-48b7-9824-c75a5b759368/flow-runs/flow-run/5b74595a-d15e-4b5f-a3d0-fc39a79dc41e
+15:17:28.476 | INFO    | Flow run 'Trial' - prefect is working
+15:17:28.635 | INFO    | Flow run 'lilac-mongrel' - Finished in state Completed()

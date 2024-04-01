@@ -1,0 +1,518 @@
+03:40:11.404 | INFO    | prefect.engine - Created flow run 'khaki-starling' for flow 'HumETLOne'
+03:40:11.408 | INFO    | Flow run 'khaki-starling' - View at https://app.prefect.cloud/account/c9e94111-cc27-49db-a2da-12760be07c27/workspace/b5d9651e-5a12-48b7-9824-c75a5b759368/flow-runs/flow-run/47045bb7-0abe-4ed1-aa4c-2b48339a9222
+03:40:12.785 | INFO    | Flow run 'bfa' - cod-ab-bfa
+03:40:13.069 | INFO    | Flow run 'bfa' - https://data.humdata.org/dataset/2940ed80-4b69-4b98-abaf-af79088852c5/resource/636d259b-22ba-4ecb-8702-ef58b38f14dd/download/bfa_adm_igb_20200323_shp.zip
+03:40:15.519 | INFO    | Flow run 'bfa' - Resource URL https://data.humdata.org/dataset/2940ed80-4b69-4b98-abaf-af79088852c5/resource/636d259b-22ba-4ecb-8702-ef58b38f14dd/download/bfa_adm_igb_20200323_shp.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA
+03:40:16.669 | INFO    | Flow run 'bfa' - Copied bfa_admbnda_adm0_igb_20200323.CPG to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM0
+03:40:16.674 | INFO    | Flow run 'bfa' - Copied bfa_admbnda_adm0_igb_20200323.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM0
+03:40:16.678 | INFO    | Flow run 'bfa' - Copied bfa_admbnda_adm0_igb_20200323.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM0
+03:40:16.687 | INFO    | Flow run 'bfa' - Copied bfa_admbnda_adm0_igb_20200323.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM0
+03:40:16.692 | INFO    | Flow run 'bfa' - Copied bfa_admbnda_adm0_igb_20200323.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM0
+03:40:16.695 | INFO    | Flow run 'bfa' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM0 and added text
+03:40:16.723 | INFO    | Flow run 'bfa' - Copied bfa_admbnda_adm1_igb_20200323.CPG to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM1
+03:40:16.728 | INFO    | Flow run 'bfa' - Copied bfa_admbnda_adm1_igb_20200323.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM1
+03:40:16.732 | INFO    | Flow run 'bfa' - Copied bfa_admbnda_adm1_igb_20200323.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM1
+03:40:16.763 | INFO    | Flow run 'bfa' - Copied bfa_admbnda_adm1_igb_20200323.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM1
+03:40:16.767 | INFO    | Flow run 'bfa' - Copied bfa_admbnda_adm1_igb_20200323.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM1
+03:40:16.770 | INFO    | Flow run 'bfa' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM1 and added text
+03:40:16.787 | INFO    | Flow run 'bfa' - Copied bfa_admbnda_adm2_igb_20200323.CPG to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM2
+03:40:16.791 | INFO    | Flow run 'bfa' - Copied bfa_admbnda_adm2_igb_20200323.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM2
+03:40:16.796 | INFO    | Flow run 'bfa' - Copied bfa_admbnda_adm2_igb_20200323.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM2
+03:40:16.849 | INFO    | Flow run 'bfa' - Copied bfa_admbnda_adm2_igb_20200323.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM2
+03:40:16.854 | INFO    | Flow run 'bfa' - Copied bfa_admbnda_adm2_igb_20200323.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM2
+03:40:16.857 | INFO    | Flow run 'bfa' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM2 and added text
+03:40:16.878 | INFO    | Flow run 'bfa' - Copied bfa_admbnda_adm3_igb_20200323.CPG to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM3
+03:40:16.884 | INFO    | Flow run 'bfa' - Copied bfa_admbnda_adm3_igb_20200323.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM3
+03:40:16.889 | INFO    | Flow run 'bfa' - Copied bfa_admbnda_adm3_igb_20200323.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM3
+03:40:16.998 | INFO    | Flow run 'bfa' - Copied bfa_admbnda_adm3_igb_20200323.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM3
+03:40:17.003 | INFO    | Flow run 'bfa' - Copied bfa_admbnda_adm3_igb_20200323.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM3
+03:40:17.006 | INFO    | Flow run 'bfa' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM3 and added text
+03:40:17.099 | INFO    | Flow run 'bfa' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM0 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/BFA_ADM0.zip
+03:40:17.620 | INFO    | Flow run 'bfa' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM1 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/BFA_ADM1.zip
+03:40:18.668 | INFO    | Flow run 'bfa' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM2 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/BFA_ADM2.zip
+03:40:21.122 | INFO    | Flow run 'bfa' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BFA/BFA_SPT/BFA_ADM3 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/BFA_ADM3.zip
+03:40:21.228 | INFO    | Flow run 'khaki-starling' - Finished in state Completed()
+03:40:21.623 | INFO    | prefect.engine - Created flow run 'vague-cormorant' for flow 'HumETLOne'
+03:40:21.624 | INFO    | Flow run 'vague-cormorant' - View at https://app.prefect.cloud/account/c9e94111-cc27-49db-a2da-12760be07c27/workspace/b5d9651e-5a12-48b7-9824-c75a5b759368/flow-runs/flow-run/dfcaed13-ad53-4711-aa01-ac397c6fadec
+03:40:22.595 | INFO    | Flow run 'bdi' - cod-ab-bdi
+03:40:22.677 | INFO    | Flow run 'bdi' - https://data.humdata.org/dataset/63148f32-4505-433d-b8ea-1fd8088b4bdf/resource/247b59b6-d86b-4998-b8e8-8b8824343efe/download/bdi_adm_igebu_ocha_20171103_shp.zip
+03:40:23.813 | INFO    | Flow run 'bdi' - Resource URL https://data.humdata.org/dataset/63148f32-4505-433d-b8ea-1fd8088b4bdf/resource/247b59b6-d86b-4998-b8e8-8b8824343efe/download/bdi_adm_igebu_ocha_20171103_shp.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BDI
+03:40:24.116 | INFO    | Flow run 'bdi' - Copied bdi_admbnda_adm0_igebu_ocha_itos_20171103.CPG to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BDI/BDI_SPT/BDI_ADM0
+03:40:24.121 | INFO    | Flow run 'bdi' - Copied bdi_admbnda_adm0_igebu_ocha_itos_20171103.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BDI/BDI_SPT/BDI_ADM0
+03:40:24.126 | INFO    | Flow run 'bdi' - Copied bdi_admbnda_adm0_igebu_ocha_itos_20171103.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BDI/BDI_SPT/BDI_ADM0
+03:40:24.131 | INFO    | Flow run 'bdi' - Copied bdi_admbnda_adm0_igebu_ocha_itos_20171103.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BDI/BDI_SPT/BDI_ADM0
+03:40:24.136 | INFO    | Flow run 'bdi' - Copied bdi_admbnda_adm0_igebu_ocha_itos_20171103.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BDI/BDI_SPT/BDI_ADM0
+03:40:24.139 | INFO    | Flow run 'bdi' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BDI/BDI_SPT/BDI_ADM0 and added text
+03:40:24.169 | INFO    | Flow run 'bdi' - Copied bdi_admbnda_adm1_igebu_ocha_20171103.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BDI/BDI_SPT/BDI_ADM1
+03:40:24.174 | INFO    | Flow run 'bdi' - Copied bdi_admbnda_adm1_igebu_ocha_20171103.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BDI/BDI_SPT/BDI_ADM1
+03:40:24.179 | INFO    | Flow run 'bdi' - Copied bdi_admbnda_adm1_igebu_ocha_20171103.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BDI/BDI_SPT/BDI_ADM1
+03:40:24.186 | INFO    | Flow run 'bdi' - Copied bdi_admbnda_adm1_igebu_ocha_20171103.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BDI/BDI_SPT/BDI_ADM1
+03:40:24.190 | INFO    | Flow run 'bdi' - Copied bdi_admbnda_adm1_igebu_ocha_20171103.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BDI/BDI_SPT/BDI_ADM1
+03:40:24.194 | INFO    | Flow run 'bdi' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BDI/BDI_SPT/BDI_ADM1 and added text
+03:40:24.210 | INFO    | Flow run 'bdi' - Copied bdi_admbnda_adm2_igebu_ocha_20171103.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BDI/BDI_SPT/BDI_ADM2
+03:40:24.215 | INFO    | Flow run 'bdi' - Copied bdi_admbnda_adm2_igebu_ocha_20171103.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BDI/BDI_SPT/BDI_ADM2
+03:40:24.220 | INFO    | Flow run 'bdi' - Copied bdi_admbnda_adm2_igebu_ocha_20171103.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BDI/BDI_SPT/BDI_ADM2
+03:40:24.239 | INFO    | Flow run 'bdi' - Copied bdi_admbnda_adm2_igebu_ocha_20171103.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BDI/BDI_SPT/BDI_ADM2
+03:40:24.243 | INFO    | Flow run 'bdi' - Copied bdi_admbnda_adm2_igebu_ocha_20171103.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BDI/BDI_SPT/BDI_ADM2
+03:40:24.246 | INFO    | Flow run 'bdi' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BDI/BDI_SPT/BDI_ADM2 and added text
+03:40:24.268 | INFO    | Flow run 'bdi' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BDI/BDI_SPT/BDI_ADM0 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/BDI_ADM0.zip
+03:40:24.312 | INFO    | Flow run 'bdi' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BDI/BDI_SPT/BDI_ADM1 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/BDI_ADM1.zip
+03:40:24.387 | INFO    | Flow run 'bdi' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/BDI/BDI_SPT/BDI_ADM2 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/BDI_ADM2.zip
+03:40:24.525 | INFO    | Flow run 'vague-cormorant' - Finished in state Completed()
+03:40:25.246 | INFO    | prefect.engine - Created flow run 'unyielding-raccoon' for flow 'HumETLOne'
+03:40:25.247 | INFO    | Flow run 'unyielding-raccoon' - View at https://app.prefect.cloud/account/c9e94111-cc27-49db-a2da-12760be07c27/workspace/b5d9651e-5a12-48b7-9824-c75a5b759368/flow-runs/flow-run/e196507d-85e0-441e-9e68-0940261252c8
+03:40:25.828 | INFO    | Flow run 'col' - cod-ab-col
+03:40:25.895 | INFO    | Flow run 'col' - https://data.humdata.org/dataset/50ea7fee-f9af-45a7-8a52-abb9c790a0b6/resource/32fba556-0109-4d1c-84cb-c8abddf7775b/download/col-administrative-divisions-shapefiles.zip
+03:40:31.161 | INFO    | Flow run 'col' - Resource URL https://data.humdata.org/dataset/50ea7fee-f9af-45a7-8a52-abb9c790a0b6/resource/32fba556-0109-4d1c-84cb-c8abddf7775b/download/col-administrative-divisions-shapefiles.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COL
+03:40:33.499 | INFO    | Flow run 'col' - Copied col_admbnda_adm0_mgn_itos_20200416.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COL/COL_SPT/COL_ADM0
+03:40:33.504 | INFO    | Flow run 'col' - Copied col_admbnda_adm0_mgn_itos_20200416.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COL/COL_SPT/COL_ADM0
+03:40:33.509 | INFO    | Flow run 'col' - Copied col_admbnda_adm0_mgn_itos_20200416.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COL/COL_SPT/COL_ADM0
+03:40:33.544 | INFO    | Flow run 'col' - Copied col_admbnda_adm0_mgn_itos_20200416.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COL/COL_SPT/COL_ADM0
+03:40:33.553 | INFO    | Flow run 'col' - Copied col_admbnda_adm0_mgn_itos_20200416.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COL/COL_SPT/COL_ADM0
+03:40:33.556 | INFO    | Flow run 'col' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COL/COL_SPT/COL_ADM0 and added text
+03:40:33.572 | INFO    | Flow run 'col' - Copied col_admbnda_adm1_mgn_20200416.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COL/COL_SPT/COL_ADM1
+03:40:33.577 | INFO    | Flow run 'col' - Copied col_admbnda_adm1_mgn_20200416.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COL/COL_SPT/COL_ADM1
+03:40:33.581 | INFO    | Flow run 'col' - Copied col_admbnda_adm1_mgn_20200416.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COL/COL_SPT/COL_ADM1
+03:40:33.689 | INFO    | Flow run 'col' - Copied col_admbnda_adm1_mgn_20200416.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COL/COL_SPT/COL_ADM1
+03:40:33.694 | INFO    | Flow run 'col' - Copied col_admbnda_adm1_mgn_20200416.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COL/COL_SPT/COL_ADM1
+03:40:33.698 | INFO    | Flow run 'col' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COL/COL_SPT/COL_ADM1 and added text
+03:40:33.716 | INFO    | Flow run 'col' - Copied col_admbnda_adm2_mgn_20200416.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COL/COL_SPT/COL_ADM2
+03:40:33.725 | INFO    | Flow run 'col' - Copied col_admbnda_adm2_mgn_20200416.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COL/COL_SPT/COL_ADM2
+03:40:33.729 | INFO    | Flow run 'col' - Copied col_admbnda_adm2_mgn_20200416.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COL/COL_SPT/COL_ADM2
+03:40:34.281 | INFO    | Flow run 'col' - Copied col_admbnda_adm2_mgn_20200416.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COL/COL_SPT/COL_ADM2
+03:40:34.287 | INFO    | Flow run 'col' - Copied col_admbnda_adm2_mgn_20200416.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COL/COL_SPT/COL_ADM2
+03:40:34.290 | INFO    | Flow run 'col' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COL/COL_SPT/COL_ADM2 and added text
+03:40:34.720 | INFO    | Flow run 'col' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COL/COL_SPT/COL_ADM0 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/COL_ADM0.zip
+03:40:36.338 | INFO    | Flow run 'col' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COL/COL_SPT/COL_ADM1 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/COL_ADM1.zip
+03:40:45.673 | INFO    | Flow run 'col' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COL/COL_SPT/COL_ADM2 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/COL_ADM2.zip
+03:40:45.769 | INFO    | Flow run 'unyielding-raccoon' - Finished in state Completed()
+03:40:46.123 | INFO    | prefect.engine - Created flow run 'mottled-anaconda' for flow 'HumETLOne'
+03:40:46.124 | INFO    | Flow run 'mottled-anaconda' - View at https://app.prefect.cloud/account/c9e94111-cc27-49db-a2da-12760be07c27/workspace/b5d9651e-5a12-48b7-9824-c75a5b759368/flow-runs/flow-run/d7c4fece-8d30-4618-9ef1-8819ac1187af
+03:40:46.637 | INFO    | Flow run 'cod' - cod-ab-cod
+03:40:46.722 | INFO    | Flow run 'cod' - https://data.humdata.org/dataset/f42132b9-8cc6-4201-b020-9259c56e8868/resource/e335bc0b-b946-437f-b771-beb5599eaf1d/download/cod_admbnda_rgc_itos_20190911_shp.zip
+03:40:48.341 | INFO    | Flow run 'cod' - Resource URL https://data.humdata.org/dataset/f42132b9-8cc6-4201-b020-9259c56e8868/resource/e335bc0b-b946-437f-b771-beb5599eaf1d/download/cod_admbnda_rgc_itos_20190911_shp.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COD
+03:40:48.746 | INFO    | Flow run 'cod' - Copied cod_admbnda_adm0_rgc_itos_20190911.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COD/COD_SPT/COD_ADM0
+03:40:48.751 | INFO    | Flow run 'cod' - Copied cod_admbnda_adm0_rgc_itos_20190911.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COD/COD_SPT/COD_ADM0
+03:40:48.755 | INFO    | Flow run 'cod' - Copied cod_admbnda_adm0_rgc_itos_20190911.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COD/COD_SPT/COD_ADM0
+03:40:48.761 | INFO    | Flow run 'cod' - Copied cod_admbnda_adm0_rgc_itos_20190911.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COD/COD_SPT/COD_ADM0
+03:40:48.765 | INFO    | Flow run 'cod' - Copied cod_admbnda_adm0_rgc_itos_20190911.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COD/COD_SPT/COD_ADM0
+03:40:48.768 | INFO    | Flow run 'cod' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COD/COD_SPT/COD_ADM0 and added text
+03:40:48.788 | INFO    | Flow run 'cod' - Copied cod_admbnda_adm1_rgc_itos_20190911.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COD/COD_SPT/COD_ADM1
+03:40:48.792 | INFO    | Flow run 'cod' - Copied cod_admbnda_adm1_rgc_itos_20190911.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COD/COD_SPT/COD_ADM1
+03:40:48.796 | INFO    | Flow run 'cod' - Copied cod_admbnda_adm1_rgc_itos_20190911.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COD/COD_SPT/COD_ADM1
+03:40:48.810 | INFO    | Flow run 'cod' - Copied cod_admbnda_adm1_rgc_itos_20190911.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COD/COD_SPT/COD_ADM1
+03:40:48.815 | INFO    | Flow run 'cod' - Copied cod_admbnda_adm1_rgc_itos_20190911.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COD/COD_SPT/COD_ADM1
+03:40:48.818 | INFO    | Flow run 'cod' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COD/COD_SPT/COD_ADM1 and added text
+03:40:48.845 | INFO    | Flow run 'cod' - Copied cod_admbnda_adm2_rgc_20190911.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COD/COD_SPT/COD_ADM2
+03:40:48.853 | INFO    | Flow run 'cod' - Copied cod_admbnda_adm2_rgc_20190911.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COD/COD_SPT/COD_ADM2
+03:40:48.859 | INFO    | Flow run 'cod' - Copied cod_admbnda_adm2_rgc_20190911.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COD/COD_SPT/COD_ADM2
+03:40:48.879 | INFO    | Flow run 'cod' - Copied cod_admbnda_adm2_rgc_20190911.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COD/COD_SPT/COD_ADM2
+03:40:48.884 | INFO    | Flow run 'cod' - Copied cod_admbnda_adm2_rgc_20190911.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COD/COD_SPT/COD_ADM2
+03:40:48.887 | INFO    | Flow run 'cod' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COD/COD_SPT/COD_ADM2 and added text
+03:40:48.912 | INFO    | Flow run 'cod' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COD/COD_SPT/COD_ADM0 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/COD_ADM0.zip
+03:40:49.017 | INFO    | Flow run 'cod' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COD/COD_SPT/COD_ADM1 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/COD_ADM1.zip
+03:40:49.223 | INFO    | Flow run 'cod' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/COD/COD_SPT/COD_ADM2 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/COD_ADM2.zip
+03:40:49.316 | INFO    | Flow run 'mottled-anaconda' - Finished in state Completed()
+03:40:49.679 | INFO    | prefect.engine - Created flow run 'handsome-cormorant' for flow 'HumETLOne'
+03:40:49.679 | INFO    | Flow run 'handsome-cormorant' - View at https://app.prefect.cloud/account/c9e94111-cc27-49db-a2da-12760be07c27/workspace/b5d9651e-5a12-48b7-9824-c75a5b759368/flow-runs/flow-run/ac98486a-bc52-4230-ba70-753d1c435c6c
+03:40:50.476 | INFO    | Flow run 'slv' - cod-ab-slv
+03:40:50.563 | INFO    | Flow run 'slv' - https://data.humdata.org/dataset/08bfc7f6-3acc-45df-a69a-b853cf1cff05/resource/b693e3e1-f7c4-4ebe-afb7-453d62abd417/download/slv_adm_gadm_2021_shp.zip
+03:40:51.809 | INFO    | Flow run 'slv' - Resource URL https://data.humdata.org/dataset/08bfc7f6-3acc-45df-a69a-b853cf1cff05/resource/b693e3e1-f7c4-4ebe-afb7-453d62abd417/download/slv_adm_gadm_2021_shp.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SLV
+03:40:52.188 | INFO    | Flow run 'slv' - Copied slv_admbnda_adm0_gadm_20210204.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SLV/SLV_SPT/SLV_ADM0
+03:40:52.193 | INFO    | Flow run 'slv' - Copied slv_admbnda_adm0_gadm_20210204.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SLV/SLV_SPT/SLV_ADM0
+03:40:52.198 | INFO    | Flow run 'slv' - Copied slv_admbnda_adm0_gadm_20210204.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SLV/SLV_SPT/SLV_ADM0
+03:40:52.205 | INFO    | Flow run 'slv' - Copied slv_admbnda_adm0_gadm_20210204.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SLV/SLV_SPT/SLV_ADM0
+03:40:52.210 | INFO    | Flow run 'slv' - Copied slv_admbnda_adm0_gadm_20210204.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SLV/SLV_SPT/SLV_ADM0
+03:40:52.217 | INFO    | Flow run 'slv' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SLV/SLV_SPT/SLV_ADM0 and added text
+03:40:52.241 | INFO    | Flow run 'slv' - Copied slv_admbnda_adm1_gadm_20210204.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SLV/SLV_SPT/SLV_ADM1
+03:40:52.245 | INFO    | Flow run 'slv' - Copied slv_admbnda_adm1_gadm_20210204.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SLV/SLV_SPT/SLV_ADM1
+03:40:52.250 | INFO    | Flow run 'slv' - Copied slv_admbnda_adm1_gadm_20210204.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SLV/SLV_SPT/SLV_ADM1
+03:40:52.264 | INFO    | Flow run 'slv' - Copied slv_admbnda_adm1_gadm_20210204.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SLV/SLV_SPT/SLV_ADM1
+03:40:52.269 | INFO    | Flow run 'slv' - Copied slv_admbnda_adm1_gadm_20210204.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SLV/SLV_SPT/SLV_ADM1
+03:40:52.272 | INFO    | Flow run 'slv' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SLV/SLV_SPT/SLV_ADM1 and added text
+03:40:52.289 | INFO    | Flow run 'slv' - Copied slv_admbnda_adm2_gadm_20210204.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SLV/SLV_SPT/SLV_ADM2
+03:40:52.294 | INFO    | Flow run 'slv' - Copied slv_admbnda_adm2_gadm_20210204.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SLV/SLV_SPT/SLV_ADM2
+03:40:52.299 | INFO    | Flow run 'slv' - Copied slv_admbnda_adm2_gadm_20210204.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SLV/SLV_SPT/SLV_ADM2
+03:40:52.315 | INFO    | Flow run 'slv' - Copied slv_admbnda_adm2_gadm_20210204.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SLV/SLV_SPT/SLV_ADM2
+03:40:52.320 | INFO    | Flow run 'slv' - Copied slv_admbnda_adm2_gadm_20210204.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SLV/SLV_SPT/SLV_ADM2
+03:40:52.327 | INFO    | Flow run 'slv' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SLV/SLV_SPT/SLV_ADM2 and added text
+03:40:52.352 | INFO    | Flow run 'slv' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SLV/SLV_SPT/SLV_ADM0 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/SLV_ADM0.zip
+03:40:52.402 | INFO    | Flow run 'slv' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SLV/SLV_SPT/SLV_ADM1 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/SLV_ADM1.zip
+03:40:52.577 | INFO    | Flow run 'slv' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SLV/SLV_SPT/SLV_ADM2 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/SLV_ADM2.zip
+03:40:52.668 | INFO    | Flow run 'handsome-cormorant' - Finished in state Completed()
+03:40:52.988 | INFO    | prefect.engine - Created flow run 'mysterious-hyena' for flow 'HumETLOne'
+03:40:52.989 | INFO    | Flow run 'mysterious-hyena' - View at https://app.prefect.cloud/account/c9e94111-cc27-49db-a2da-12760be07c27/workspace/b5d9651e-5a12-48b7-9824-c75a5b759368/flow-runs/flow-run/dccd4c34-3ed3-4229-8abf-992c9541fb53
+03:40:53.876 | INFO    | Flow run 'eri' - cod-ab-eri
+03:40:53.986 | INFO    | Flow run 'eri' - https://data.humdata.org/dataset/2025e742-8b5a-4f72-aac5-a28e96ce3cb8/resource/b9c462e3-d725-4580-b1a6-33c0c13104af/download/eri_adm_gov_20200427_shp.zip
+03:40:55.655 | INFO    | Flow run 'eri' - Resource URL https://data.humdata.org/dataset/2025e742-8b5a-4f72-aac5-a28e96ce3cb8/resource/b9c462e3-d725-4580-b1a6-33c0c13104af/download/eri_adm_gov_20200427_shp.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ERI
+03:40:56.003 | INFO    | Flow run 'eri' - Copied eri_admbnda_adm0_gov_20200427.CPG to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ERI/ERI_SPT/ERI_ADM0
+03:40:56.008 | INFO    | Flow run 'eri' - Copied eri_admbnda_adm0_gov_20200427.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ERI/ERI_SPT/ERI_ADM0
+03:40:56.012 | INFO    | Flow run 'eri' - Copied eri_admbnda_adm0_gov_20200427.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ERI/ERI_SPT/ERI_ADM0
+03:40:56.025 | INFO    | Flow run 'eri' - Copied eri_admbnda_adm0_gov_20200427.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ERI/ERI_SPT/ERI_ADM0
+03:40:56.030 | INFO    | Flow run 'eri' - Copied eri_admbnda_adm0_gov_20200427.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ERI/ERI_SPT/ERI_ADM0
+03:40:56.033 | INFO    | Flow run 'eri' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ERI/ERI_SPT/ERI_ADM0 and added text
+03:40:56.055 | INFO    | Flow run 'eri' - Copied eri_admbnda_adm1_gov_20200427.CPG to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ERI/ERI_SPT/ERI_ADM1
+03:40:56.060 | INFO    | Flow run 'eri' - Copied eri_admbnda_adm1_gov_20200427.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ERI/ERI_SPT/ERI_ADM1
+03:40:56.064 | INFO    | Flow run 'eri' - Copied eri_admbnda_adm1_gov_20200427.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ERI/ERI_SPT/ERI_ADM1
+03:40:56.080 | INFO    | Flow run 'eri' - Copied eri_admbnda_adm1_gov_20200427.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ERI/ERI_SPT/ERI_ADM1
+03:40:56.088 | INFO    | Flow run 'eri' - Copied eri_admbnda_adm1_gov_20200427.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ERI/ERI_SPT/ERI_ADM1
+03:40:56.091 | INFO    | Flow run 'eri' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ERI/ERI_SPT/ERI_ADM1 and added text
+03:40:56.120 | INFO    | Flow run 'eri' - Copied eri_admbnda_adm2_gov_20200427.CPG to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ERI/ERI_SPT/ERI_ADM2
+03:40:56.125 | INFO    | Flow run 'eri' - Copied eri_admbnda_adm2_gov_20200427.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ERI/ERI_SPT/ERI_ADM2
+03:40:56.130 | INFO    | Flow run 'eri' - Copied eri_admbnda_adm2_gov_20200427.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ERI/ERI_SPT/ERI_ADM2
+03:40:56.147 | INFO    | Flow run 'eri' - Copied eri_admbnda_adm2_gov_20200427.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ERI/ERI_SPT/ERI_ADM2
+03:40:56.152 | INFO    | Flow run 'eri' - Copied eri_admbnda_adm2_gov_20200427.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ERI/ERI_SPT/ERI_ADM2
+03:40:56.155 | INFO    | Flow run 'eri' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ERI/ERI_SPT/ERI_ADM2 and added text
+03:40:56.273 | INFO    | Flow run 'eri' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ERI/ERI_SPT/ERI_ADM0 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/ERI_ADM0.zip
+03:40:56.423 | INFO    | Flow run 'eri' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ERI/ERI_SPT/ERI_ADM1 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/ERI_ADM1.zip
+03:40:56.644 | INFO    | Flow run 'eri' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ERI/ERI_SPT/ERI_ADM2 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/ERI_ADM2.zip
+03:40:56.779 | INFO    | Flow run 'mysterious-hyena' - Finished in state Completed()
+03:40:57.122 | INFO    | prefect.engine - Created flow run 'logical-clam' for flow 'HumETLOne'
+03:40:57.123 | INFO    | Flow run 'logical-clam' - View at https://app.prefect.cloud/account/c9e94111-cc27-49db-a2da-12760be07c27/workspace/b5d9651e-5a12-48b7-9824-c75a5b759368/flow-runs/flow-run/50efcccf-9a6e-4227-aa32-4a128acd6ca4
+03:40:57.606 | INFO    | Flow run 'eth' - cod-ab-eth
+03:40:57.675 | INFO    | Flow run 'eth' - https://data.humdata.org/dataset/cb58fa1f-687d-4cac-81a7-655ab1efb2d0/resource/63c4a9af-53a7-455b-a4d2-adcc22b48d28/download/eth_adm_csa_bofedb_2021_shp.zip
+03:40:59.530 | INFO    | Flow run 'eth' - Resource URL https://data.humdata.org/dataset/cb58fa1f-687d-4cac-81a7-655ab1efb2d0/resource/63c4a9af-53a7-455b-a4d2-adcc22b48d28/download/eth_adm_csa_bofedb_2021_shp.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH
+03:41:00.288 | INFO    | Flow run 'eth' - Copied eth_admbnda_adm0_csa_bofedb_itos_2021.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM0
+03:41:00.293 | INFO    | Flow run 'eth' - Copied eth_admbnda_adm0_csa_bofedb_itos_2021.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM0
+03:41:00.298 | INFO    | Flow run 'eth' - Copied eth_admbnda_adm0_csa_bofedb_itos_2021.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM0
+03:41:00.303 | INFO    | Flow run 'eth' - Copied eth_admbnda_adm0_csa_bofedb_itos_2021.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM0
+03:41:00.308 | INFO    | Flow run 'eth' - Copied eth_admbnda_adm0_csa_bofedb_itos_2021.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM0
+03:41:00.311 | INFO    | Flow run 'eth' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM0 and added text
+03:41:00.328 | INFO    | Flow run 'eth' - Copied eth_admbnda_adm1_csa_bofedb_2021.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM1
+03:41:00.333 | INFO    | Flow run 'eth' - Copied eth_admbnda_adm1_csa_bofedb_2021.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM1
+03:41:00.337 | INFO    | Flow run 'eth' - Copied eth_admbnda_adm1_csa_bofedb_2021.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM1
+03:41:00.344 | INFO    | Flow run 'eth' - Copied eth_admbnda_adm1_csa_bofedb_2021.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM1
+03:41:00.349 | INFO    | Flow run 'eth' - Copied eth_admbnda_adm1_csa_bofedb_2021.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM1
+03:41:00.352 | INFO    | Flow run 'eth' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM1 and added text
+03:41:00.372 | INFO    | Flow run 'eth' - Copied eth_admbnda_adm2_csa_bofedb_2021.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM2
+03:41:00.377 | INFO    | Flow run 'eth' - Copied eth_admbnda_adm2_csa_bofedb_2021.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM2
+03:41:00.381 | INFO    | Flow run 'eth' - Copied eth_admbnda_adm2_csa_bofedb_2021.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM2
+03:41:00.407 | INFO    | Flow run 'eth' - Copied eth_admbnda_adm2_csa_bofedb_2021.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM2
+03:41:00.411 | INFO    | Flow run 'eth' - Copied eth_admbnda_adm2_csa_bofedb_2021.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM2
+03:41:00.415 | INFO    | Flow run 'eth' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM2 and added text
+03:41:00.425 | INFO    | Flow run 'eth' - Copied eth_admbnda_adm3_csa_bofedb_2021.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM3
+03:41:00.434 | INFO    | Flow run 'eth' - Copied eth_admbnda_adm3_csa_bofedb_2021.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM3
+03:41:00.439 | INFO    | Flow run 'eth' - Copied eth_admbnda_adm3_csa_bofedb_2021.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM3
+03:41:00.519 | INFO    | Flow run 'eth' - Copied eth_admbnda_adm3_csa_bofedb_2021.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM3
+03:41:00.529 | INFO    | Flow run 'eth' - Copied eth_admbnda_adm3_csa_bofedb_2021.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM3
+03:41:00.532 | INFO    | Flow run 'eth' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM3 and added text
+03:41:00.542 | INFO    | Flow run 'eth' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM0 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/ETH_ADM0.zip
+03:41:00.583 | INFO    | Flow run 'eth' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM1 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/ETH_ADM1.zip
+03:41:00.999 | INFO    | Flow run 'eth' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM2 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/ETH_ADM2.zip
+03:41:02.811 | INFO    | Flow run 'eth' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/ETH/ETH_SPT/ETH_ADM3 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/ETH_ADM3.zip
+03:41:02.923 | INFO    | Flow run 'logical-clam' - Finished in state Completed()
+03:41:03.296 | INFO    | prefect.engine - Created flow run 'radical-gecko' for flow 'HumETLOne'
+03:41:03.297 | INFO    | Flow run 'radical-gecko' - View at https://app.prefect.cloud/account/c9e94111-cc27-49db-a2da-12760be07c27/workspace/b5d9651e-5a12-48b7-9824-c75a5b759368/flow-runs/flow-run/3b9ed61e-06b8-46e3-be61-b7b139bc3f51
+03:41:04.011 | INFO    | Flow run 'irq' - cod-ab-irq
+03:41:04.084 | INFO    | Flow run 'irq' - https://data.humdata.org/dataset/488bb3cd-3ce9-49d3-862a-3ce7975c63e1/resource/191fdada-9f16-4ed4-a00b-b0667808b742/download/irq-administrative-divisions-shapefiles.zip
+03:41:05.229 | INFO    | Flow run 'irq' - Resource URL https://data.humdata.org/dataset/488bb3cd-3ce9-49d3-862a-3ce7975c63e1/resource/191fdada-9f16-4ed4-a00b-b0667808b742/download/irq-administrative-divisions-shapefiles.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ
+03:41:05.552 | INFO    | Flow run 'irq' - Copied irq_admbnda_adm0_cso_itos_20190603.CPG to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM0
+03:41:05.557 | INFO    | Flow run 'irq' - Copied irq_admbnda_adm0_cso_itos_20190603.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM0
+03:41:05.562 | INFO    | Flow run 'irq' - Copied irq_admbnda_adm0_cso_itos_20190603.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM0
+03:41:05.566 | INFO    | Flow run 'irq' - Copied irq_admbnda_adm0_cso_itos_20190603.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM0
+03:41:05.571 | INFO    | Flow run 'irq' - Copied irq_admbnda_adm0_cso_itos_20190603.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM0
+03:41:05.574 | INFO    | Flow run 'irq' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM0 and added text
+03:41:05.599 | INFO    | Flow run 'irq' - Copied irq_admbnda_adm1_cso_20190603.CPG to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM1
+03:41:05.604 | INFO    | Flow run 'irq' - Copied irq_admbnda_adm1_cso_20190603.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM1
+03:41:05.609 | INFO    | Flow run 'irq' - Copied irq_admbnda_adm1_cso_20190603.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM1
+03:41:05.614 | INFO    | Flow run 'irq' - Copied irq_admbnda_adm1_cso_20190603.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM1
+03:41:05.619 | INFO    | Flow run 'irq' - Copied irq_admbnda_adm1_cso_20190603.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM1
+03:41:05.622 | INFO    | Flow run 'irq' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM1 and added text
+03:41:05.626 | INFO    | Flow run 'irq' - Copied irq_admbnda_adm2_cso_20190603.CPG to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM2
+03:41:05.631 | INFO    | Flow run 'irq' - Copied irq_admbnda_adm2_cso_20190603.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM2
+03:41:05.635 | INFO    | Flow run 'irq' - Copied irq_admbnda_adm2_cso_20190603.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM2
+03:41:05.642 | INFO    | Flow run 'irq' - Copied irq_admbnda_adm2_cso_20190603.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM2
+03:41:05.647 | INFO    | Flow run 'irq' - Copied irq_admbnda_adm2_cso_20190603.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM2
+03:41:05.650 | INFO    | Flow run 'irq' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM2 and added text
+03:41:05.668 | INFO    | Flow run 'irq' - Copied irq_admbnda_adm3_cso_20190603.CPG to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM3
+03:41:05.674 | INFO    | Flow run 'irq' - Copied irq_admbnda_adm3_cso_20190603.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM3
+03:41:05.679 | INFO    | Flow run 'irq' - Copied irq_admbnda_adm3_cso_20190603.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM3
+03:41:05.688 | INFO    | Flow run 'irq' - Copied irq_admbnda_adm3_cso_20190603.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM3
+03:41:05.692 | INFO    | Flow run 'irq' - Copied irq_admbnda_adm3_cso_20190603.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM3
+03:41:05.695 | INFO    | Flow run 'irq' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM3 and added text
+03:41:05.703 | INFO    | Flow run 'irq' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM0 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/IRQ_ADM0.zip
+03:41:05.720 | INFO    | Flow run 'irq' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM1 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/IRQ_ADM1.zip
+03:41:05.756 | INFO    | Flow run 'irq' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM2 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/IRQ_ADM2.zip
+03:41:05.826 | INFO    | Flow run 'irq' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/IRQ/IRQ_SPT/IRQ_ADM3 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/IRQ_ADM3.zip
+03:41:05.912 | INFO    | Flow run 'radical-gecko' - Finished in state Completed()
+03:41:06.327 | INFO    | prefect.engine - Created flow run 'industrious-trogon' for flow 'HumETLOne'
+03:41:06.327 | INFO    | Flow run 'industrious-trogon' - View at https://app.prefect.cloud/account/c9e94111-cc27-49db-a2da-12760be07c27/workspace/b5d9651e-5a12-48b7-9824-c75a5b759368/flow-runs/flow-run/5652888b-d9f2-413e-9059-91a4e9cbe85b
+03:41:06.864 | INFO    | Flow run 'mli' - cod-ab-mli
+03:41:07.012 | INFO    | Flow run 'mli' - https://data.humdata.org/dataset/d2ec62bb-5a93-436d-8297-88b3ee9b6818/resource/186a227b-6e9c-4b90-8634-b6369da07e17/download/mli_adm_ab_shp.zip
+03:41:08.333 | INFO    | Flow run 'mli' - Resource URL https://data.humdata.org/dataset/d2ec62bb-5a93-436d-8297-88b3ee9b6818/resource/186a227b-6e9c-4b90-8634-b6369da07e17/download/mli_adm_ab_shp.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI
+03:41:08.662 | INFO    | Flow run 'mli' - Copied mli_admbnda_adm0_1m_gov_20211220.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM0
+03:41:08.667 | INFO    | Flow run 'mli' - Copied mli_admbnda_adm0_1m_gov_20211220.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM0
+03:41:08.672 | INFO    | Flow run 'mli' - Copied mli_admbnda_adm0_1m_gov_20211220.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM0
+03:41:08.678 | INFO    | Flow run 'mli' - Copied mli_admbnda_adm0_1m_gov_20211220.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM0
+03:41:08.683 | INFO    | Flow run 'mli' - Copied mli_admbnda_adm0_1m_gov_20211220.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM0
+03:41:08.686 | INFO    | Flow run 'mli' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM0 and added text
+03:41:08.713 | INFO    | Flow run 'mli' - Copied mli_admbnda_adm1_1m_gov_20211220.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM1
+03:41:08.718 | INFO    | Flow run 'mli' - Copied mli_admbnda_adm1_1m_gov_20211220.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM1
+03:41:08.723 | INFO    | Flow run 'mli' - Copied mli_admbnda_adm1_1m_gov_20211220.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM1
+03:41:08.728 | INFO    | Flow run 'mli' - Copied mli_admbnda_adm1_1m_gov_20211220.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM1
+03:41:08.733 | INFO    | Flow run 'mli' - Copied mli_admbnda_adm1_1m_gov_20211220.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM1
+03:41:08.736 | INFO    | Flow run 'mli' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM1 and added text
+03:41:08.750 | INFO    | Flow run 'mli' - Copied mli_admbnda_adm2_1m_gov_20211220.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM2
+03:41:08.755 | INFO    | Flow run 'mli' - Copied mli_admbnda_adm2_1m_gov_20211220.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM2
+03:41:08.759 | INFO    | Flow run 'mli' - Copied mli_admbnda_adm2_1m_gov_20211220.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM2
+03:41:08.766 | INFO    | Flow run 'mli' - Copied mli_admbnda_adm2_1m_gov_20211220.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM2
+03:41:08.770 | INFO    | Flow run 'mli' - Copied mli_admbnda_adm2_1m_gov_20211220.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM2
+03:41:08.773 | INFO    | Flow run 'mli' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM2 and added text
+03:41:08.790 | INFO    | Flow run 'mli' - Copied mli_admbnda_adm3_1m_gov_20211220.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM3
+03:41:08.798 | INFO    | Flow run 'mli' - Copied mli_admbnda_adm3_1m_gov_20211220.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM3
+03:41:08.802 | INFO    | Flow run 'mli' - Copied mli_admbnda_adm3_1m_gov_20211220.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM3
+03:41:08.812 | INFO    | Flow run 'mli' - Copied mli_admbnda_adm3_1m_gov_20211220.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM3
+03:41:08.817 | INFO    | Flow run 'mli' - Copied mli_admbnda_adm3_1m_gov_20211220.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM3
+03:41:08.820 | INFO    | Flow run 'mli' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM3 and added text
+03:41:08.840 | INFO    | Flow run 'mli' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM0 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/MLI_ADM0.zip
+03:41:08.864 | INFO    | Flow run 'mli' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM1 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/MLI_ADM1.zip
+03:41:08.900 | INFO    | Flow run 'mli' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM2 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/MLI_ADM2.zip
+03:41:08.990 | INFO    | Flow run 'mli' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MLI/MLI_SPT/MLI_ADM3 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/MLI_ADM3.zip
+03:41:09.071 | INFO    | Flow run 'industrious-trogon' - Finished in state Completed()
+03:41:09.374 | INFO    | prefect.engine - Created flow run 'arcane-horse' for flow 'HumETLOne'
+03:41:09.374 | INFO    | Flow run 'arcane-horse' - View at https://app.prefect.cloud/account/c9e94111-cc27-49db-a2da-12760be07c27/workspace/b5d9651e-5a12-48b7-9824-c75a5b759368/flow-runs/flow-run/297ef1f9-2381-438f-aaf7-8c16e8223c64
+03:41:10.227 | INFO    | Flow run 'moz' - cod-ab-moz
+03:41:10.486 | INFO    | Flow run 'moz' - https://data.humdata.org/dataset/5e8d83a5-1210-49be-b7d9-cf286dbc15df/resource/5ae5fdcc-42d1-4258-966a-58e8a6d7e5a1/download/moz_adm_20190607b_shp.zip
+03:41:12.428 | INFO    | Flow run 'moz' - Resource URL https://data.humdata.org/dataset/5e8d83a5-1210-49be-b7d9-cf286dbc15df/resource/5ae5fdcc-42d1-4258-966a-58e8a6d7e5a1/download/moz_adm_20190607b_shp.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ
+03:41:13.276 | INFO    | Flow run 'moz' - Copied moz_admbnda_adm0_ine_20190607.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM0
+03:41:13.281 | INFO    | Flow run 'moz' - Copied moz_admbnda_adm0_ine_20190607.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM0
+03:41:13.285 | INFO    | Flow run 'moz' - Copied moz_admbnda_adm0_ine_20190607.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM0
+03:41:13.301 | INFO    | Flow run 'moz' - Copied moz_admbnda_adm0_ine_20190607.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM0
+03:41:13.306 | INFO    | Flow run 'moz' - Copied moz_admbnda_adm0_ine_20190607.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM0
+03:41:13.309 | INFO    | Flow run 'moz' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM0 and added text
+03:41:13.333 | INFO    | Flow run 'moz' - Copied moz_admbnda_adm1_ine_20190607.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM1
+03:41:13.338 | INFO    | Flow run 'moz' - Copied moz_admbnda_adm1_ine_20190607.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM1
+03:41:13.343 | INFO    | Flow run 'moz' - Copied moz_admbnda_adm1_ine_20190607.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM1
+03:41:13.364 | INFO    | Flow run 'moz' - Copied moz_admbnda_adm1_ine_20190607.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM1
+03:41:13.369 | INFO    | Flow run 'moz' - Copied moz_admbnda_adm1_ine_20190607.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM1
+03:41:13.372 | INFO    | Flow run 'moz' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM1 and added text
+03:41:13.399 | INFO    | Flow run 'moz' - Copied moz_admbnda_adm2_ine_20190607.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM2
+03:41:13.404 | INFO    | Flow run 'moz' - Copied moz_admbnda_adm2_ine_20190607.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM2
+03:41:13.408 | INFO    | Flow run 'moz' - Copied moz_admbnda_adm2_ine_20190607.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM2
+03:41:13.464 | INFO    | Flow run 'moz' - Copied moz_admbnda_adm2_ine_20190607.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM2
+03:41:13.470 | INFO    | Flow run 'moz' - Copied moz_admbnda_adm2_ine_20190607.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM2
+03:41:13.473 | INFO    | Flow run 'moz' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM2 and added text
+03:41:13.502 | INFO    | Flow run 'moz' - Copied moz_admbnda_adm3_ine_20190607.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM3
+03:41:13.508 | INFO    | Flow run 'moz' - Copied moz_admbnda_adm3_ine_20190607.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM3
+03:41:13.513 | INFO    | Flow run 'moz' - Copied moz_admbnda_adm3_ine_20190607.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM3
+03:41:13.602 | INFO    | Flow run 'moz' - Copied moz_admbnda_adm3_ine_20190607.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM3
+03:41:13.607 | INFO    | Flow run 'moz' - Copied moz_admbnda_adm3_ine_20190607.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM3
+03:41:13.610 | INFO    | Flow run 'moz' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM3 and added text
+03:41:13.795 | INFO    | Flow run 'moz' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM0 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/MOZ_ADM0.zip
+03:41:14.136 | INFO    | Flow run 'moz' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM1 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/MOZ_ADM1.zip
+03:41:15.250 | INFO    | Flow run 'moz' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM2 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/MOZ_ADM2.zip
+03:41:16.801 | INFO    | Flow run 'moz' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/MOZ/MOZ_SPT/MOZ_ADM3 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/MOZ_ADM3.zip
+03:41:16.935 | INFO    | Flow run 'arcane-horse' - Finished in state Completed()
+03:41:17.444 | INFO    | prefect.engine - Created flow run 'orchid-cuckoo' for flow 'HumETLOne'
+03:41:17.445 | INFO    | Flow run 'orchid-cuckoo' - View at https://app.prefect.cloud/account/c9e94111-cc27-49db-a2da-12760be07c27/workspace/b5d9651e-5a12-48b7-9824-c75a5b759368/flow-runs/flow-run/90258f5c-8a4a-46e1-8c73-5a58c2f7b87a
+03:41:17.938 | INFO    | Flow run 'som' - cod-ab-som
+03:41:18.028 | INFO    | Flow run 'som' - https://data.humdata.org/dataset/ec140a63-5330-4376-a3df-c7ebf73cfc3c/resource/cc9ada4b-aee2-4745-ab59-98e7ef4ce037/download/som_adm_ocha_itos_20230308_shp.zip
+03:41:19.437 | INFO    | Flow run 'som' - Resource URL https://data.humdata.org/dataset/ec140a63-5330-4376-a3df-c7ebf73cfc3c/resource/cc9ada4b-aee2-4745-ab59-98e7ef4ce037/download/som_adm_ocha_itos_20230308_shp.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SOM
+03:41:19.907 | INFO    | Flow run 'som' - Copied som_admbnda_adm0_ocha_20230308.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SOM/SOM_SPT/SOM_ADM0
+03:41:19.912 | INFO    | Flow run 'som' - Copied som_admbnda_adm0_ocha_20230308.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SOM/SOM_SPT/SOM_ADM0
+03:41:19.917 | INFO    | Flow run 'som' - Copied som_admbnda_adm0_ocha_20230308.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SOM/SOM_SPT/SOM_ADM0
+03:41:19.922 | INFO    | Flow run 'som' - Copied som_admbnda_adm0_ocha_20230308.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SOM/SOM_SPT/SOM_ADM0
+03:41:19.927 | INFO    | Flow run 'som' - Copied som_admbnda_adm0_ocha_20230308.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SOM/SOM_SPT/SOM_ADM0
+03:41:19.930 | INFO    | Flow run 'som' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SOM/SOM_SPT/SOM_ADM0 and added text
+03:41:19.951 | INFO    | Flow run 'som' - Copied som_admbnda_adm1_ocha_20230308.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SOM/SOM_SPT/SOM_ADM1
+03:41:19.955 | INFO    | Flow run 'som' - Copied som_admbnda_adm1_ocha_20230308.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SOM/SOM_SPT/SOM_ADM1
+03:41:19.975 | INFO    | Flow run 'som' - Copied som_admbnda_adm1_ocha_20230308.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SOM/SOM_SPT/SOM_ADM1
+03:41:19.981 | INFO    | Flow run 'som' - Copied som_admbnda_adm1_ocha_20230308.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SOM/SOM_SPT/SOM_ADM1
+03:41:19.985 | INFO    | Flow run 'som' - Copied som_admbnda_adm1_ocha_20230308.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SOM/SOM_SPT/SOM_ADM1
+03:41:19.988 | INFO    | Flow run 'som' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SOM/SOM_SPT/SOM_ADM1 and added text
+03:41:20.016 | INFO    | Flow run 'som' - Copied som_admbnda_adm2_ocha_20230308.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SOM/SOM_SPT/SOM_ADM2
+03:41:20.020 | INFO    | Flow run 'som' - Copied som_admbnda_adm2_ocha_20230308.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SOM/SOM_SPT/SOM_ADM2
+03:41:20.024 | INFO    | Flow run 'som' - Copied som_admbnda_adm2_ocha_20230308.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SOM/SOM_SPT/SOM_ADM2
+03:41:20.030 | INFO    | Flow run 'som' - Copied som_admbnda_adm2_ocha_20230308.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SOM/SOM_SPT/SOM_ADM2
+03:41:20.034 | INFO    | Flow run 'som' - Copied som_admbnda_adm2_ocha_20230308.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SOM/SOM_SPT/SOM_ADM2
+03:41:20.037 | INFO    | Flow run 'som' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SOM/SOM_SPT/SOM_ADM2 and added text
+03:41:20.053 | INFO    | Flow run 'som' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SOM/SOM_SPT/SOM_ADM0 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/SOM_ADM0.zip
+03:41:20.076 | INFO    | Flow run 'som' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SOM/SOM_SPT/SOM_ADM1 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/SOM_ADM1.zip
+03:41:20.098 | INFO    | Flow run 'som' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SOM/SOM_SPT/SOM_ADM2 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/SOM_ADM2.zip
+03:41:20.196 | INFO    | Flow run 'orchid-cuckoo' - Finished in state Completed()
+03:41:20.608 | INFO    | prefect.engine - Created flow run 'cyber-goldfish' for flow 'HumETLOne'
+03:41:20.609 | INFO    | Flow run 'cyber-goldfish' - View at https://app.prefect.cloud/account/c9e94111-cc27-49db-a2da-12760be07c27/workspace/b5d9651e-5a12-48b7-9824-c75a5b759368/flow-runs/flow-run/09dbc97e-dfd5-40c0-9537-76b4d23f7c8f
+03:41:21.483 | INFO    | Flow run 'pse' - cod-ab-pse
+03:41:21.556 | INFO    | Flow run 'pse' - https://data.humdata.org/dataset/2caf8373-816f-458c-9913-71bddb9cab7c/resource/773b6fed-001d-4044-898d-49506c1d667e/download/pse_adm_pamop_20231019_shp.zip
+03:41:22.812 | INFO    | Flow run 'pse' - Resource URL https://data.humdata.org/dataset/2caf8373-816f-458c-9913-71bddb9cab7c/resource/773b6fed-001d-4044-898d-49506c1d667e/download/pse_adm_pamop_20231019_shp.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE
+03:41:23.142 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm0_pamop_20210806.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM0
+03:41:23.147 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm0_pamop_20210806.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM0
+03:41:23.153 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm0_pamop_20210806.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM0
+03:41:23.162 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm0_pamop_20210806.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM0
+03:41:23.175 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm0_pamop_20210806.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM0
+03:41:23.178 | INFO    | Flow run 'pse' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM0 and added text
+03:41:23.183 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm0_pamop_20231019.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM0
+03:41:23.187 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm0_pamop_20231019.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM0
+03:41:23.192 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm0_pamop_20231019.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM0
+03:41:23.199 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm0_pamop_20231019.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM0
+03:41:23.203 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm0_pamop_20231019.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM0
+03:41:23.250 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm1_pamop_20210806.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM1
+03:41:23.258 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm1_pamop_20210806.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM1
+03:41:23.263 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm1_pamop_20210806.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM1
+03:41:23.283 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm1_pamop_20210806.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM1
+03:41:23.288 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm1_pamop_20210806.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM1
+03:41:23.291 | INFO    | Flow run 'pse' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM1 and added text
+03:41:23.295 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm1_pamop_20231019.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM1
+03:41:23.300 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm1_pamop_20231019.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM1
+03:41:23.304 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm1_pamop_20231019.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM1
+03:41:23.310 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm1_pamop_20231019.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM1
+03:41:23.315 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm1_pamop_20231019.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM1
+03:41:23.332 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm2_pamop_20210806.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM2
+03:41:23.337 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm2_pamop_20210806.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM2
+03:41:23.342 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm2_pamop_20210806.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM2
+03:41:23.377 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm2_pamop_20210806.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM2
+03:41:23.382 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm2_pamop_20210806.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM2
+03:41:23.385 | INFO    | Flow run 'pse' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM2 and added text
+03:41:23.390 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm2_pamop_20231019.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM2
+03:41:23.394 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm2_pamop_20231019.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM2
+03:41:23.399 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm2_pamop_20231019.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM2
+03:41:23.407 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm2_pamop_20231019.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM2
+03:41:23.412 | INFO    | Flow run 'pse' - Copied pse_admbnda_adm2_pamop_20231019.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM2
+03:41:23.516 | INFO    | Flow run 'pse' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM0 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/PSE_ADM0.zip
+03:41:23.625 | INFO    | Flow run 'pse' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM1 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/PSE_ADM1.zip
+03:41:23.806 | INFO    | Flow run 'pse' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/PSE/PSE_SPT/PSE_ADM2 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/PSE_ADM2.zip
+03:41:23.914 | INFO    | Flow run 'cyber-goldfish' - Finished in state Completed()
+03:41:24.977 | INFO    | prefect.engine - Created flow run 'married-grasshopper' for flow 'HumETLOne'
+03:41:24.978 | INFO    | Flow run 'married-grasshopper' - View at https://app.prefect.cloud/account/c9e94111-cc27-49db-a2da-12760be07c27/workspace/b5d9651e-5a12-48b7-9824-c75a5b759368/flow-runs/flow-run/b10b272c-7083-4df0-bd57-48882cf85ceb
+03:41:25.429 | INFO    | Flow run 'sdn' - cod-ab-sdn
+03:41:25.512 | INFO    | Flow run 'sdn' - https://data.humdata.org/dataset/a66a4b6c-92de-4507-9546-aa1900474180/resource/6855b024-43f1-4674-9e3c-1392bad83f46/download/sdn_adm_cbs_nic_ssa_20200831_shp.zip
+03:41:26.676 | INFO    | Flow run 'sdn' - Resource URL https://data.humdata.org/dataset/a66a4b6c-92de-4507-9546-aa1900474180/resource/6855b024-43f1-4674-9e3c-1392bad83f46/download/sdn_adm_cbs_nic_ssa_20200831_shp.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SDN
+03:41:27.032 | INFO    | Flow run 'sdn' - Copied sdn_admbnda_adm0_cbs_nic_ssa_20200831.CPG to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SDN/SDN_SPT/SDN_ADM0
+03:41:27.037 | INFO    | Flow run 'sdn' - Copied sdn_admbnda_adm0_cbs_nic_ssa_20200831.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SDN/SDN_SPT/SDN_ADM0
+03:41:27.042 | INFO    | Flow run 'sdn' - Copied sdn_admbnda_adm0_cbs_nic_ssa_20200831.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SDN/SDN_SPT/SDN_ADM0
+03:41:27.047 | INFO    | Flow run 'sdn' - Copied sdn_admbnda_adm0_cbs_nic_ssa_20200831.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SDN/SDN_SPT/SDN_ADM0
+03:41:27.052 | INFO    | Flow run 'sdn' - Copied sdn_admbnda_adm0_cbs_nic_ssa_20200831.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SDN/SDN_SPT/SDN_ADM0
+03:41:27.055 | INFO    | Flow run 'sdn' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SDN/SDN_SPT/SDN_ADM0 and added text
+03:41:27.104 | INFO    | Flow run 'sdn' - Copied sdn_admbnda_adm1_cbs_nic_ssa_20200831.CPG to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SDN/SDN_SPT/SDN_ADM1
+03:41:27.108 | INFO    | Flow run 'sdn' - Copied sdn_admbnda_adm1_cbs_nic_ssa_20200831.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SDN/SDN_SPT/SDN_ADM1
+03:41:27.113 | INFO    | Flow run 'sdn' - Copied sdn_admbnda_adm1_cbs_nic_ssa_20200831.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SDN/SDN_SPT/SDN_ADM1
+03:41:27.120 | INFO    | Flow run 'sdn' - Copied sdn_admbnda_adm1_cbs_nic_ssa_20200831.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SDN/SDN_SPT/SDN_ADM1
+03:41:27.124 | INFO    | Flow run 'sdn' - Copied sdn_admbnda_adm1_cbs_nic_ssa_20200831.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SDN/SDN_SPT/SDN_ADM1
+03:41:27.127 | INFO    | Flow run 'sdn' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SDN/SDN_SPT/SDN_ADM1 and added text
+03:41:27.177 | INFO    | Flow run 'sdn' - Copied sdn_admbnda_adm2_cbs_nic_ssa_20200831.CPG to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SDN/SDN_SPT/SDN_ADM2
+03:41:27.183 | INFO    | Flow run 'sdn' - Copied sdn_admbnda_adm2_cbs_nic_ssa_20200831.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SDN/SDN_SPT/SDN_ADM2
+03:41:27.187 | INFO    | Flow run 'sdn' - Copied sdn_admbnda_adm2_cbs_nic_ssa_20200831.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SDN/SDN_SPT/SDN_ADM2
+03:41:27.195 | INFO    | Flow run 'sdn' - Copied sdn_admbnda_adm2_cbs_nic_ssa_20200831.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SDN/SDN_SPT/SDN_ADM2
+03:41:27.213 | INFO    | Flow run 'sdn' - Copied sdn_admbnda_adm2_cbs_nic_ssa_20200831.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SDN/SDN_SPT/SDN_ADM2
+03:41:27.216 | INFO    | Flow run 'sdn' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SDN/SDN_SPT/SDN_ADM2 and added text
+03:41:27.231 | INFO    | Flow run 'sdn' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SDN/SDN_SPT/SDN_ADM0 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/SDN_ADM0.zip
+03:41:27.262 | INFO    | Flow run 'sdn' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SDN/SDN_SPT/SDN_ADM1 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/SDN_ADM1.zip
+03:41:27.314 | INFO    | Flow run 'sdn' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SDN/SDN_SPT/SDN_ADM2 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/SDN_ADM2.zip
+03:41:27.411 | INFO    | Flow run 'married-grasshopper' - Finished in state Completed()
+03:41:27.863 | INFO    | prefect.engine - Created flow run 'poised-narwhal' for flow 'HumETLOne'
+03:41:27.864 | INFO    | Flow run 'poised-narwhal' - View at https://app.prefect.cloud/account/c9e94111-cc27-49db-a2da-12760be07c27/workspace/b5d9651e-5a12-48b7-9824-c75a5b759368/flow-runs/flow-run/76c1b10a-22d6-47b6-868c-a0975f4e921a
+03:41:28.348 | INFO    | Flow run 'ven' - cod-ab-ven
+03:41:28.418 | INFO    | Flow run 'ven' - https://data.humdata.org/dataset/5b141d29-534f-4f01-a0bc-41e2f375d925/resource/b6cf4bf5-418a-49ad-80ec-b84d0e0e0d41/download/ven_adm_ine_20210223_shp.zip
+03:41:30.511 | INFO    | Flow run 'ven' - Resource URL https://data.humdata.org/dataset/5b141d29-534f-4f01-a0bc-41e2f375d925/resource/b6cf4bf5-418a-49ad-80ec-b84d0e0e0d41/download/ven_adm_ine_20210223_shp.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN
+03:41:31.201 | INFO    | Flow run 'ven' - Copied ven_admbnda_adm0_ine_20210223.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM0
+03:41:31.206 | INFO    | Flow run 'ven' - Copied ven_admbnda_adm0_ine_20210223.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM0
+03:41:31.210 | INFO    | Flow run 'ven' - Copied ven_admbnda_adm0_ine_20210223.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM0
+03:41:31.226 | INFO    | Flow run 'ven' - Copied ven_admbnda_adm0_ine_20210223.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM0
+03:41:31.231 | INFO    | Flow run 'ven' - Copied ven_admbnda_adm0_ine_20210223.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM0
+03:41:31.234 | INFO    | Flow run 'ven' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM0 and added text
+03:41:31.248 | INFO    | Flow run 'ven' - Copied ven_admbnda_adm1_ine_20210223.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM1
+03:41:31.252 | INFO    | Flow run 'ven' - Copied ven_admbnda_adm1_ine_20210223.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM1
+03:41:31.257 | INFO    | Flow run 'ven' - Copied ven_admbnda_adm1_ine_20210223.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM1
+03:41:31.294 | INFO    | Flow run 'ven' - Copied ven_admbnda_adm1_ine_20210223.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM1
+03:41:31.300 | INFO    | Flow run 'ven' - Copied ven_admbnda_adm1_ine_20210223.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM1
+03:41:31.303 | INFO    | Flow run 'ven' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM1 and added text
+03:41:31.318 | INFO    | Flow run 'ven' - Copied ven_admbnda_adm2_ine_20210223.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM2
+03:41:31.324 | INFO    | Flow run 'ven' - Copied ven_admbnda_adm2_ine_20210223.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM2
+03:41:31.328 | INFO    | Flow run 'ven' - Copied ven_admbnda_adm2_ine_20210223.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM2
+03:41:31.367 | INFO    | Flow run 'ven' - Copied ven_admbnda_adm2_ine_20210223.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM2
+03:41:31.372 | INFO    | Flow run 'ven' - Copied ven_admbnda_adm2_ine_20210223.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM2
+03:41:31.375 | INFO    | Flow run 'ven' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM2 and added text
+03:41:31.404 | INFO    | Flow run 'ven' - Copied ven_admbnda_adm3_ine_20210223.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM3
+03:41:31.414 | INFO    | Flow run 'ven' - Copied ven_admbnda_adm3_ine_20210223.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM3
+03:41:31.419 | INFO    | Flow run 'ven' - Copied ven_admbnda_adm3_ine_20210223.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM3
+03:41:31.474 | INFO    | Flow run 'ven' - Copied ven_admbnda_adm3_ine_20210223.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM3
+03:41:31.479 | INFO    | Flow run 'ven' - Copied ven_admbnda_adm3_ine_20210223.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM3
+03:41:31.482 | INFO    | Flow run 'ven' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM3 and added text
+03:41:31.678 | INFO    | Flow run 'ven' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM0 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/VEN_ADM0.zip
+03:41:32.004 | INFO    | Flow run 'ven' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM1 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/VEN_ADM1.zip
+03:41:32.656 | INFO    | Flow run 'ven' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM2 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/VEN_ADM2.zip
+03:41:33.671 | INFO    | Flow run 'ven' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/VEN/VEN_SPT/VEN_ADM3 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/VEN_ADM3.zip
+03:41:33.794 | INFO    | Flow run 'poised-narwhal' - Finished in state Completed()
+03:41:34.152 | INFO    | prefect.engine - Created flow run 'outstanding-chimpanzee' for flow 'HumETLOne'
+03:41:34.152 | INFO    | Flow run 'outstanding-chimpanzee' - View at https://app.prefect.cloud/account/c9e94111-cc27-49db-a2da-12760be07c27/workspace/b5d9651e-5a12-48b7-9824-c75a5b759368/flow-runs/flow-run/d55437b0-06ab-4724-981c-99f87afb6fca
+03:41:34.619 | INFO    | Flow run 'yem' - cod-ab-yem
+03:41:34.732 | INFO    | Flow run 'yem' - https://data.humdata.org/dataset/6b2656e2-b915-4671-bfed-468d5edcd80a/resource/31161a5e-2111-4967-9f1e-4fceeb38a3a1/download/yem-administrative-divisions-shapefiles.zip
+03:41:36.405 | INFO    | Flow run 'yem' - Resource URL https://data.humdata.org/dataset/6b2656e2-b915-4671-bfed-468d5edcd80a/resource/31161a5e-2111-4967-9f1e-4fceeb38a3a1/download/yem-administrative-divisions-shapefiles.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM
+03:41:37.020 | INFO    | Flow run 'yem' - Copied yem_admbnda_adm0_govyem_cso_20191002.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM0
+03:41:37.025 | INFO    | Flow run 'yem' - Copied yem_admbnda_adm0_govyem_cso_20191002.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM0
+03:41:37.029 | INFO    | Flow run 'yem' - Copied yem_admbnda_adm0_govyem_cso_20191002.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM0
+03:41:37.038 | INFO    | Flow run 'yem' - Copied yem_admbnda_adm0_govyem_cso_20191002.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM0
+03:41:37.043 | INFO    | Flow run 'yem' - Copied yem_admbnda_adm0_govyem_cso_20191002.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM0
+03:41:37.046 | INFO    | Flow run 'yem' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM0 and added text
+03:41:37.071 | INFO    | Flow run 'yem' - Copied yem_admbnda_adm1_govyem_cso_20191002.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM1
+03:41:37.076 | INFO    | Flow run 'yem' - Copied yem_admbnda_adm1_govyem_cso_20191002.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM1
+03:41:37.081 | INFO    | Flow run 'yem' - Copied yem_admbnda_adm1_govyem_cso_20191002.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM1
+03:41:37.096 | INFO    | Flow run 'yem' - Copied yem_admbnda_adm1_govyem_cso_20191002.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM1
+03:41:37.101 | INFO    | Flow run 'yem' - Copied yem_admbnda_adm1_govyem_cso_20191002.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM1
+03:41:37.106 | INFO    | Flow run 'yem' - Copied yem_admbndp_adm1_govyem_cso_20191002.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM1
+03:41:37.110 | INFO    | Flow run 'yem' - Copied yem_admbndp_adm1_govyem_cso_20191002.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM1
+03:41:37.114 | INFO    | Flow run 'yem' - Copied yem_admbndp_adm1_govyem_cso_20191002.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM1
+03:41:37.119 | INFO    | Flow run 'yem' - Copied yem_admbndp_adm1_govyem_cso_20191002.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM1
+03:41:37.123 | INFO    | Flow run 'yem' - Copied yem_admbndp_adm1_govyem_cso_20191002.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM1
+03:41:37.126 | INFO    | Flow run 'yem' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM1 and added text
+03:41:37.137 | INFO    | Flow run 'yem' - Copied yem_admbnda_adm2_govyem_cso_20191002.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM2
+03:41:37.152 | INFO    | Flow run 'yem' - Copied yem_admbnda_adm2_govyem_cso_20191002.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM2
+03:41:37.157 | INFO    | Flow run 'yem' - Copied yem_admbnda_adm2_govyem_cso_20191002.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM2
+03:41:37.179 | INFO    | Flow run 'yem' - Copied yem_admbnda_adm2_govyem_cso_20191002.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM2
+03:41:37.185 | INFO    | Flow run 'yem' - Copied yem_admbnda_adm2_govyem_cso_20191002.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM2
+03:41:37.199 | INFO    | Flow run 'yem' - Copied yem_admbndp_adm2_govyem_cso_20191002.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM2
+03:41:37.204 | INFO    | Flow run 'yem' - Copied yem_admbndp_adm2_govyem_cso_20191002.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM2
+03:41:37.209 | INFO    | Flow run 'yem' - Copied yem_admbndp_adm2_govyem_cso_20191002.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM2
+03:41:37.213 | INFO    | Flow run 'yem' - Copied yem_admbndp_adm2_govyem_cso_20191002.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM2
+03:41:37.217 | INFO    | Flow run 'yem' - Copied yem_admbndp_adm2_govyem_cso_20191002.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM2
+03:41:37.220 | INFO    | Flow run 'yem' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM2 and added text
+03:41:37.240 | INFO    | Flow run 'yem' - Copied yem_admbnda_adm3_govyem_cso_20191002.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM3
+03:41:37.244 | INFO    | Flow run 'yem' - Copied yem_admbnda_adm3_govyem_cso_20191002.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM3
+03:41:37.249 | INFO    | Flow run 'yem' - Copied yem_admbndp_adm3_govyem_cso_20191002.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM3
+03:41:37.299 | INFO    | Flow run 'yem' - Copied yem_admbndp_adm3_govyem_cso_20191002.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM3
+03:41:37.304 | INFO    | Flow run 'yem' - Copied yem_admbndp_adm3_govyem_cso_20191002.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM3
+03:41:37.309 | INFO    | Flow run 'yem' - Copied yem_admbndp_adm3_govyem_cso_20191002.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM3
+03:41:37.313 | INFO    | Flow run 'yem' - Copied yem_admbndp_adm3_govyem_cso_20191002.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM3
+03:41:37.317 | INFO    | Flow run 'yem' - Copied yem_admbnda_adm3_govyem_cso_20191002.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM3
+03:41:37.373 | INFO    | Flow run 'yem' - Copied yem_admbnda_adm3_govyem_cso_20191002.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM3
+03:41:37.408 | INFO    | Flow run 'yem' - Copied yem_admbnda_adm3_govyem_cso_20191002.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM3
+03:41:37.411 | INFO    | Flow run 'yem' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM3 and added text
+03:41:37.491 | INFO    | Flow run 'yem' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM0 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/YEM_ADM0.zip
+03:41:37.630 | INFO    | Flow run 'yem' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM1 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/YEM_ADM1.zip
+03:41:37.919 | INFO    | Flow run 'yem' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM2 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/YEM_ADM2.zip
+03:41:38.654 | INFO    | Flow run 'yem' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/YEM/YEM_SPT/YEM_ADM3 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/YEM_ADM3.zip
+03:41:38.739 | INFO    | Flow run 'outstanding-chimpanzee' - Finished in state Completed()
+03:41:39.081 | INFO    | prefect.engine - Created flow run 'happy-foxhound' for flow 'HumETLOne'
+03:41:39.082 | INFO    | Flow run 'happy-foxhound' - View at https://app.prefect.cloud/account/c9e94111-cc27-49db-a2da-12760be07c27/workspace/b5d9651e-5a12-48b7-9824-c75a5b759368/flow-runs/flow-run/d3eb1256-83f1-4517-b84a-2d3e7133ed5d
+03:41:39.589 | INFO    | Flow run 'nga' - cod-ab-nga
+03:41:39.683 | INFO    | Flow run 'nga' - https://data.humdata.org/dataset/81ac1d38-f603-4a98-804d-325c658599a3/resource/aa69f07b-ed8e-456a-9233-b20674730be6/download/nga_adm_osgof_20190417.zip
+03:41:41.680 | INFO    | Flow run 'nga' - Resource URL https://data.humdata.org/dataset/81ac1d38-f603-4a98-804d-325c658599a3/resource/aa69f07b-ed8e-456a-9233-b20674730be6/download/nga_adm_osgof_20190417.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA
+03:41:42.187 | INFO    | Flow run 'nga' - Copied nga_admbnda_adm0_osgof_20190417.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM0
+03:41:42.192 | INFO    | Flow run 'nga' - Copied nga_admbnda_adm0_osgof_20190417.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM0
+03:41:42.197 | INFO    | Flow run 'nga' - Copied nga_admbnda_adm0_osgof_20190417.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM0
+03:41:42.202 | INFO    | Flow run 'nga' - Copied nga_admbnda_adm0_osgof_20190417.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM0
+03:41:42.207 | INFO    | Flow run 'nga' - Copied nga_admbnda_adm0_osgof_20190417.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM0
+03:41:42.210 | INFO    | Flow run 'nga' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM0 and added text
+03:41:42.215 | INFO    | Flow run 'nga' - Copied nga_admbnda_adm1_osgof_20190417.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM1
+03:41:42.231 | INFO    | Flow run 'nga' - Copied nga_admbnda_adm1_osgof_20190417.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM1
+03:41:42.235 | INFO    | Flow run 'nga' - Copied nga_admbnda_adm1_osgof_20190417.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM1
+03:41:42.245 | INFO    | Flow run 'nga' - Copied nga_admbnda_adm1_osgof_20190417.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM1
+03:41:42.249 | INFO    | Flow run 'nga' - Copied nga_admbnda_adm1_osgof_20190417.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM1
+03:41:42.252 | INFO    | Flow run 'nga' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM1 and added text
+03:41:42.257 | INFO    | Flow run 'nga' - Copied nga_admbnda_adm2_osgof_20190417.CPG to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM2
+03:41:42.264 | INFO    | Flow run 'nga' - Copied nga_admbnda_adm2_osgof_20190417.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM2
+03:41:42.268 | INFO    | Flow run 'nga' - Copied nga_admbnda_adm2_osgof_20190417.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM2
+03:41:42.287 | INFO    | Flow run 'nga' - Copied nga_admbnda_adm2_osgof_20190417.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM2
+03:41:42.292 | INFO    | Flow run 'nga' - Copied nga_admbnda_adm2_osgof_20190417.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM2
+03:41:42.295 | INFO    | Flow run 'nga' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM2 and added text
+03:41:42.299 | INFO    | Flow run 'nga' - Copied nga_admbnda_adm3_osgof_eha_20190417.CPG to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM3
+03:41:42.308 | INFO    | Flow run 'nga' - Copied nga_admbnda_adm3_osgof_eha_20190417.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM3
+03:41:42.312 | INFO    | Flow run 'nga' - Copied nga_admbnda_adm3_osgof_eha_20190417.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM3
+03:41:42.321 | INFO    | Flow run 'nga' - Copied nga_admbnda_adm3_osgof_eha_20190417.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM3
+03:41:42.326 | INFO    | Flow run 'nga' - Copied nga_admbnda_adm3_osgof_eha_20190417.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM3
+03:41:42.329 | INFO    | Flow run 'nga' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM3 and added text
+03:41:42.345 | INFO    | Flow run 'nga' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM0 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/NGA_ADM0.zip
+03:41:42.414 | INFO    | Flow run 'nga' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM1 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/NGA_ADM1.zip
+03:41:42.631 | INFO    | Flow run 'nga' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM2 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/NGA_ADM2.zip
+03:41:42.739 | INFO    | Flow run 'nga' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/NGA/NGA_SPT/NGA_ADM3 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/NGA_ADM3.zip
+03:41:42.833 | INFO    | Flow run 'happy-foxhound' - Finished in state Completed()

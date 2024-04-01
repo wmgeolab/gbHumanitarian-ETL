@@ -1,0 +1,33 @@
+03:50:09.928 | INFO    | prefect.engine - Created flow run 'incredible-python' for flow 'HumETLThree'
+03:50:09.932 | INFO    | Flow run 'incredible-python' - View at https://app.prefect.cloud/account/c9e94111-cc27-49db-a2da-12760be07c27/workspace/b5d9651e-5a12-48b7-9824-c75a5b759368/flow-runs/flow-run/cdd00c6d-6fb0-4671-b2f8-61f0057c419c
+03:50:10.791 | INFO    | Flow run 'cod-ab-syr' - https://data.humdata.org/dataset/356a63e9-90aa-4b9c-a938-58ef24469c00/resource/e72f4daa-6924-42f3-9255-09a4ad30837a/download/syr_admin_shp_utf8_20230124.zip
+03:50:12.316 | INFO    | Flow run 'cod-ab-syr' - Resource URL https://data.humdata.org/dataset/356a63e9-90aa-4b9c-a938-58ef24469c00/resource/e72f4daa-6924-42f3-9255-09a4ad30837a/download/syr_admin_shp_utf8_20230124.zip downloaded to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR
+03:50:12.959 | INFO    | Flow run 'cod-ab-syr' - Copied syr_admin0.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN0
+03:50:12.963 | INFO    | Flow run 'cod-ab-syr' - Copied syr_admin0.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN0
+03:50:12.967 | INFO    | Flow run 'cod-ab-syr' - Copied syr_admin0.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN0
+03:50:12.971 | INFO    | Flow run 'cod-ab-syr' - Copied syr_admin0.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN0
+03:50:12.976 | INFO    | Flow run 'cod-ab-syr' - Copied syr_admin0.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN0
+03:50:12.978 | INFO    | Flow run 'cod-ab-syr' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN0 and added text
+03:50:12.984 | INFO    | Flow run 'cod-ab-syr' - Copied syr_admin1.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN1
+03:50:12.988 | INFO    | Flow run 'cod-ab-syr' - Copied syr_admin1.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN1
+03:50:12.992 | INFO    | Flow run 'cod-ab-syr' - Copied syr_admin1.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN1
+03:50:12.998 | INFO    | Flow run 'cod-ab-syr' - Copied syr_admin1.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN1
+03:50:13.002 | INFO    | Flow run 'cod-ab-syr' - Copied syr_admin1.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN1
+03:50:13.005 | INFO    | Flow run 'cod-ab-syr' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN1 and added text
+03:50:13.011 | INFO    | Flow run 'cod-ab-syr' - Copied syr_admin2.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN2
+03:50:13.015 | INFO    | Flow run 'cod-ab-syr' - Copied syr_admin2.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN2
+03:50:13.019 | INFO    | Flow run 'cod-ab-syr' - Copied syr_admin2.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN2
+03:50:13.032 | INFO    | Flow run 'cod-ab-syr' - Copied syr_admin2.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN2
+03:50:13.037 | INFO    | Flow run 'cod-ab-syr' - Copied syr_admin2.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN2
+03:50:13.039 | INFO    | Flow run 'cod-ab-syr' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN2 and added text
+03:50:13.046 | INFO    | Flow run 'cod-ab-syr' - Copied syr_admin3.cpg to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN3
+03:50:13.052 | INFO    | Flow run 'cod-ab-syr' - Copied syr_admin3.dbf to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN3
+03:50:13.056 | INFO    | Flow run 'cod-ab-syr' - Copied syr_admin3.prj to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN3
+03:50:13.074 | INFO    | Flow run 'cod-ab-syr' - Copied syr_admin3.shp to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN3
+03:50:13.078 | INFO    | Flow run 'cod-ab-syr' - Copied syr_admin3.shx to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN3
+03:50:13.081 | INFO    | Flow run 'cod-ab-syr' - Copied meta.txt to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN3 and added text
+03:50:13.099 | INFO    | Flow run 'cod-ab-syr' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN0 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/SYR_ADMIN0.zip
+03:50:13.162 | INFO    | Flow run 'cod-ab-syr' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN1 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/SYR_ADMIN1.zip
+03:50:13.310 | INFO    | Flow run 'cod-ab-syr' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN2 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/SYR_ADMIN2.zip
+03:50:13.549 | INFO    | Flow run 'cod-ab-syr' - Successfully zipped /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data/SYR/SYR_SPT/SYR_ADMIN3 to /sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/SYR_ADMIN3.zip
+03:50:13.735 | INFO    | Flow run 'incredible-python' - Finished in state Completed()
