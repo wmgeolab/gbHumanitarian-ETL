@@ -2,11 +2,14 @@ from hdx.utilities.easy_logging import setup_logging
 from hdx.api.configuration import Configuration
 from hdx.data.dataset import Dataset
 from prefect import flow
+from prefect.runtime import flow_run
 import os
 import requests
 import shutil
+import datetime
 import zipfile
 import re
+
 
 #path to save the files
 download_dir = "/sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data"
@@ -24,8 +27,14 @@ def zip_directory(path, zip_path):
                 zipf.write(file_path, arcname=file)
     print(f"Successfully zipped {path} to {zip_path}")
 
+def generate_flow_run_name():
+    parameters = flow_run.parameters
+    name = parameters["Country_iso"]
+    date = datetime.datetime.now(datetime.timezone.utc)
 
-@flow(name='HumETLThree',flow_run_name="{Country_iso}",log_prints=True)
+    return f"{name}-On-{date:%A}-{date:%B}-{date.day}-{date.year}"
+
+@flow(name='UNOCHA: ETLThree',flow_run_name=generate_flow_run_name,log_prints=True)
 #Method to create all Adm level folders for each country
 def create_folders(Country_iso):
 
