@@ -1,12 +1,15 @@
-from hdx.utilities.easy_logging import setup_logging
+ from hdx.utilities.easy_logging import setup_logging
 from hdx.api.configuration import Configuration
 from hdx.data.dataset import Dataset
 from prefect import flow
+from prefect.runtime import flow_run
 import os
 import requests
 import shutil
+import datetime
 import zipfile
 import re
+
 
 #path to save the files
 download_dir = "/sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data"
@@ -15,7 +18,8 @@ source_dir = "/sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/extern
 #configuring hdx api
 Configuration.create(hdx_site="prod", user_agent="First Trial", hdx_read_only=True)
 
-#Method to zip the files 
+
+#Method to zip the files
 def zip_directory(path, zip_path):
     with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
         for root, dirs, files in os.walk(path):
@@ -25,7 +29,6 @@ def zip_directory(path, zip_path):
     print(f"Successfully zipped {path} to {zip_path}")
 
 
-@flow(name='HumETLFour',flow_run_name="{Country_iso}",log_prints=True)
 #Method to create all Adm level folders for each country
 def create_folders(Country_iso):
     # replace this with the ID of the dataset you want to retrieve metadata for
@@ -131,10 +134,19 @@ def create_folders(Country_iso):
         outpath=os.path.join(source_dir, f"{directory}.zip")
         zip_directory(inpath,outpath)
 
+def generate_flow_run_name():
+
+    date = datetime.datetime.now(datetime.timezone.utc)
+
+    return f"On-{date:%A}-{date:%B}-{date.day}-{date.year}"
+
+@flow(name='UNOCHA: ETLFour',flow_run_name=generate_flow_run_name,log_prints=True)
+def countryList(Country_iso):
+    for country in Country_iso:
+        print(country)
+        create_folders(Country_iso=country)
 
 #ISO Codes of countries
 Country_iso=["caf","tcd","civ"]
 
-for country in Country_iso:
-    name=country
-    create_folders(Country_iso=country)
+countryList(Country_iso)
