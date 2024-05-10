@@ -7,22 +7,21 @@ import datetime
 import random
 from datetime import date
 from prefect import flow
+from prefect.runtime import flow_run
 from decouple import config
 from github import Github
 from urllib.request import urlopen
 from urllib.parse import quote_plus
+from github.GithubException import GithubException
 
 downData = "/sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData"
 gitData = "/sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/gitData/geoBoundaries/sourceData/gbHumanitarian"
 
-# @flow(log_prints=True)
-# def hi(dir1, dir2):
 
-@flow(name='Check and Pull',flow_run_name="{branchname}",log_prints=True)
 def submit_to_github(branchname, title, body, src, dst, basename_hash):
     # init
-    g = Github(config('GITHUB_TOKEN',))
-    upstream = g.get_repo('rohith4444/geoBoundaries') # upstream
+    g = Github(config('GITHUB_TOKEN', default='github token'))
+    upstream = g.get_repo('wmgeolab/geoBoundaries') # upstream
     upstream_branch = 'main'
     # get or create the fork
     try:
@@ -71,13 +70,13 @@ def submit_to_github(branchname, title, body, src, dst, basename_hash):
             pull = upstream.create_pull(title, body, base=upstream_branch, head=branchname)
             
             # return the url
-            pull_url = 'https://github.com/rohith4444/geoBoundaries/pull/{}'.format(pull.number)
+            pull_url = 'https://github.com/wmgeolab/geoBoundaries/pull/{}'.format(pull.number)
             print(pull_url)
             time.sleep(70)
 
     else:
         for pull in existing_pulls:
-            if basename_hash in pull.body:
+            if pull.body is not None and basename_hash in pull.body:
                 print('Pull request already exists.')
                 return
 
@@ -112,7 +111,7 @@ def submit_to_github(branchname, title, body, src, dst, basename_hash):
             fork.update_file(dst, commit_message, content, sha=existing_sha, branch=branchname)
 
             #make pull request
-            pull = upstream.create_pull(title, body, base=upstream_branch, head=branchname)
+            pull = upstream.create_pull(title, body, base=upstream_branch, head=f'{fork.owner.login}:{branchname}')
             
             # return the url
             pull_url = 'https://github.com/rohith4444/geoBoundaries/pull/{}'.format(pull.number)
@@ -128,11 +127,20 @@ def compare_files(file1_path, file2_path,basename):
     if os.path.isfile(file1_path) and os.path.isfile(file2_path):
         file1_extension = os.path.splitext(file1_path)[1]
         file2_extension = os.path.splitext(file2_path)[1]
-        if file1_extension and file2_extension in [".txt", ".csv", ".xml", ".json"]:
+        # if file1_extension and file2_extension in [".txt", ".csv", ".xml", ".json"]:
+        #     with open(file1_path, "r", encoding="utf-8") as f1, open(file2_path, "r", encoding="utf-8") as f2:
+        #         hash1 = hashlib.sha256(f1.read().encode()).hexdigest()
+        #         hash2 = hashlib.sha256(f2.read().encode()).hexdigest()
+        # else:
+        #     with open(file1_path, "rb") as f1, open(file2_path, "rb") as f2:
+        #         hash1 = hashlib.sha256(f1.read()).hexdigest()
+        #         hash2 = hashlib.sha256(f2.read()).hexdigest()
+
+        try:
             with open(file1_path, "r", encoding="utf-8") as f1, open(file2_path, "r", encoding="utf-8") as f2:
                 hash1 = hashlib.sha256(f1.read().encode()).hexdigest()
                 hash2 = hashlib.sha256(f2.read().encode()).hexdigest()
-        else:
+        except UnicodeDecodeError:
             with open(file1_path, "rb") as f1, open(file2_path, "rb") as f2:
                 hash1 = hashlib.sha256(f1.read()).hexdigest()
                 hash2 = hashlib.sha256(f2.read()).hexdigest()
@@ -141,7 +149,7 @@ def compare_files(file1_path, file2_path,basename):
             print(f"{file1_path} and {file2_path} are the same")
         else:
             print(f"{file1_path} and {file2_path} are different")
-            src=f"/sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/{basename}"
+            src=f"/home/rohith/work/HumData/SourceData/{basename}"
             now = datetime.datetime.now()
             month = now.strftime("%B")  # Month name, full version
             today = date.today()
@@ -156,9 +164,35 @@ def compare_files(file1_path, file2_path,basename):
             basename_hash = generate_md5(basename)
             body=f"""Pull request to update {basename} and the hash value {basename_hash}.
                      This automated pull request has been generated to update the existing files with the most recent versions obtained from UNOCHA."""
-            submit_to_github(branchname,title,body,src,dst,basename_hash)            
+            retry_count = 0
+            max_retries=3
+            backoff_factor=90
+            while retry_count < max_retries:
+                try:
+                    submit_to_github(branchname, title, body, src, dst, basename_hash)
+                    break  # Exit the loop if the operation succeeds
+                except GithubException as e:
+                    print(f"Encountered GithubException: {e}")
+                    if e.status == 502:  # Retry only for 502 server error
+                        retry_count += 1
+                        wait_time = backoff_factor ** retry_count
+                        print(f"Retrying after {wait_time} seconds...")
+                        time.sleep(wait_time)
+                    else:
+                        raise  # Re-raise exception if it's not a 502 server error
+
+            if retry_count == max_retries:
+                print(f"Failed after {max_retries} retries.")
+
+            # submit_to_github(branchname,title,body,src,dst,basename_hash)              
 
 
+def generate_flow_run_name():
+    date = datetime.datetime.now(datetime.timezone.utc)
+
+    return f"On-{date:%A}-{date:%B}-{date.day}-{date.year}"
+
+@flow(name='UNOCHA: Check and PullRequest',flow_run_name=generate_flow_run_name,log_prints=True)
 def compare_directories(dir1, dir2):
     dir1_files = set(os.listdir(dir1))
     dir2_files = set(os.listdir(dir2))
@@ -180,6 +214,8 @@ def compare_directories(dir1, dir2):
             with zipfile.ZipFile(file1_path, 'r') as zip1, zipfile.ZipFile(file2_path, 'r') as zip2:
                 zip1_files = set(zip1.namelist())
                 zip2_files = set(zip2.namelist())
+                print(zip1_files)
+                print(zip2_files)
 
                 for file1_path in zip1_files:
                     file1_extension = os.path.splitext(file1_path)[1]
@@ -207,5 +243,4 @@ compare_directories(downData,gitData)
 
 # if __name__ == "__main__":
 #     hi(downData,gitData)
-
 
