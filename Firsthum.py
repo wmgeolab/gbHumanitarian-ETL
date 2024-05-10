@@ -1,4 +1,4 @@
- from hdx.utilities.easy_logging import setup_logging
+from hdx.utilities.easy_logging import setup_logging
 from hdx.api.configuration import Configuration
 from hdx.data.dataset import Dataset
 from prefect import flow
@@ -14,18 +14,8 @@ import re
 #path to save the files
 download_dir = "/sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data"
 source_dir = "/sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData"
-
 #configuring hdx api
 Configuration.create(hdx_site="prod", user_agent="First Trial", hdx_read_only=True)
-
-#Method to zip the files 
-def zip_directory(path, zip_path):
-    with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
-        for root, dirs, files in os.walk(path):
-            for file in files:
-                file_path = os.path.join(root, file)
-                zipf.write(file_path, arcname=file)
-    print(f"Successfully zipped {path} to {zip_path}")
 
 #Method to zip the files 
 def zip_directory(path, zip_path):
@@ -115,24 +105,38 @@ def create_folders(Country_iso):
     #creating admin level directories sames as source directories
     for adm_level in range(6):
         adm_string = f"adm{adm_level}"
-        ext = ["cpg","dbf","prj","shp","shx"]
-        spt_path = os.path.join(path,  f"{filename}_SPT")
+        ext = ["cpg", "dbf", "prj", "shp", "shx"]
+        spt_path = os.path.join(path, f"{filename}_SPT")
+        print("separate path", spt_path)
         adm_zip_path = os.path.join(spt_path, f"{filename}_{adm_string.upper()}")
-        for file in os.listdir(extrct_path):
-            if adm_string in file and file[-3:].lower() in ext:
+        print("admin zip path", adm_zip_path)      
+        for extension in ext:
+            files_with_extension = [file for file in os.listdir(extrct_path) if file.lower().endswith(f".{extension}") and adm_string in file]
+            print(files_with_extension)
+            if files_with_extension:
                 os.makedirs(adm_zip_path, exist_ok=True)
-                copyfile=os.path.join(extrct_path, file)
-                shutil.copy2( copyfile, adm_zip_path)
-                print(f"Copied {file} to {adm_zip_path}")
-            if file[-3:].lower() == "txt" and os.path.isdir(adm_zip_path):
-                copyfile=os.path.join(extrct_path, file)
-                with open(copyfile, "r") as f:
-                    contents = f.read()
-                    # Modify the contents of the text file as required
-                    modified_contents = contents.replace("Boundary Type: \n", f"Boundary Type: {adm_string.upper()}\n")
-                with open(os.path.join(adm_zip_path, file), "w") as f:
-                    f.write(modified_contents)
-                print(f"Copied {file} to {adm_zip_path} and added text")
+                latest_modified_file = max(files_with_extension, key=lambda f: os.path.getmtime(os.path.join(extrct_path, f)))
+                copyfile = os.path.join(extrct_path, latest_modified_file)
+                destination_file_extension = os.path.splitext(latest_modified_file)[1]
+                destination_files_with_extension = [file for file in os.listdir(adm_zip_path) if file.lower().endswith(destination_file_extension)]
+                if not destination_files_with_extension:
+                    destination_file = os.path.join(adm_zip_path, latest_modified_file)
+                    shutil.copy2(copyfile, destination_file)
+                    print(f"Copied {latest_modified_file} to {adm_zip_path}")
+                else:
+                    print(f"File with extension '{destination_file_extension}' already exists in {adm_zip_path}")
+                for file in os.listdir(extrct_path):
+                    if file[-3:].lower() == "txt" and os.path.isdir(adm_zip_path):
+                        copyfile=os.path.join(extrct_path, file)
+                        with open(copyfile, "r") as f:
+                            contents = f.read()
+                            # Modify the contents of the text file as required
+                            modified_contents = contents.replace("Boundary Type: \n", f"Boundary Type: {adm_string.upper()}\n")
+                        with open(os.path.join(adm_zip_path, file), "w") as f:
+                            f.write(modified_contents)
+                        print(f"Copied {file} to {adm_zip_path} and added text")
+            else:
+                print(f"No files with extension '{extension}' found in {extrct_path}")
 
     #zipping the adminlevel directories
     for directory in os.listdir(spt_path):
@@ -154,6 +158,6 @@ def countryList(Country_iso):
         create_folders(Country_iso=country)
 
 #ISO Codes of countries
-Country_iso=["bfa","bdi","col","cod","slv","eri","eth","irq","mli","moz","som","pse","sdn","ven","yem","nga"]
+Country_iso=["bfa","bdi","col","cod","slv","eri","eth","irq","mli","moz","som","pse","sdn","ven","yem","nga","ukr"]
 
 countryList(Country_iso)
