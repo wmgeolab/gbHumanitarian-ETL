@@ -1,4 +1,4 @@
- from hdx.utilities.easy_logging import setup_logging
+from hdx.utilities.easy_logging import setup_logging
 from hdx.api.configuration import Configuration
 from hdx.data.dataset import Dataset
 from prefect import flow
@@ -17,7 +17,6 @@ source_dir = "/sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/extern
 
 #configuring hdx api
 Configuration.create(hdx_site="prod", user_agent="First Trial", hdx_read_only=True)
-
 
 #Method to zip the files
 def zip_directory(path, zip_path):
