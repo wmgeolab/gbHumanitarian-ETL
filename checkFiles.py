@@ -20,7 +20,7 @@ gitData = "/sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/
 
 def submit_to_github(branchname, title, body, src, dst, basename_hash):
     # init
-    g = Github(config('GITHUB_TOKEN', default='github token'))
+    g = Github(config('GITHUB_TOKEN', default='replace with github token'))
     upstream = g.get_repo('wmgeolab/geoBoundaries') # upstream
     upstream_branch = 'main'
     # get or create the fork
@@ -149,7 +149,7 @@ def compare_files(file1_path, file2_path,basename):
             print(f"{file1_path} and {file2_path} are the same")
         else:
             print(f"{file1_path} and {file2_path} are different")
-            src=f"/home/rohith/work/HumData/SourceData/{basename}"
+            src=f"/sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/{basename}"
             now = datetime.datetime.now()
             month = now.strftime("%B")  # Month name, full version
             today = date.today()
@@ -243,4 +243,3 @@ compare_directories(downData,gitData)
 
 # if __name__ == "__main__":
 #     hi(downData,gitData)
-
