@@ -1,163 +1,246 @@
-from hdx.utilities.easy_logging import setup_logging
-from hdx.api.configuration import Configuration
-from hdx.data.dataset import Dataset
+import os
+import hashlib
+import time
+import json
+import zipfile
+import datetime
+import random
+from datetime import date
 from prefect import flow
 from prefect.runtime import flow_run
-import os
-import requests
-import shutil
-import datetime
-import zipfile
-import re
+from decouple import config
+from github import Github
+from urllib.request import urlopen
+from urllib.parse import quote_plus
+from github.GithubException import GithubException
+
+downData = "/sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData"
+gitData = "/sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/gitData/geoBoundaries/sourceData/gbHumanitarian"
 
 
-#path to save the files
-download_dir = "/sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/Data"
-source_dir = "/sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData"
-#configuring hdx api
-Configuration.create(hdx_site="prod", user_agent="First Trial", hdx_read_only=True)
+def submit_to_github(branchname, title, body, src, dst, basename_hash):
+    # init
+    g = Github(config('GITHUB_TOKEN', default='replace with github token'))
+    upstream = g.get_repo('wmgeolab/geoBoundaries') # upstream
+    upstream_branch = 'main'
+    # get or create the fork
+    try:
+        # get existing fork
+        fork = g.get_user().get_repo('geoBoundaries')
+    except:
+        # fork doesn't already exist, eg if the geoBoundaryBot's fork has been deleted/cleaned up
+        fork = g.get_user().create_fork(upstream)
 
-#Method to zip the files 
-def zip_directory(path, zip_path):
-    with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
-        for root, dirs, files in os.walk(path):
-            for file in files:
-                file_path = os.path.join(root, file)
-                zipf.write(file_path, arcname=file)
-    print(f"Successfully zipped {path} to {zip_path}")
+    # check if pull request already exists
+    existing_pulls = upstream.get_pulls(base=upstream_branch)
+    print("Crossed it")
 
-#Method to create all Adm level folders for each country
-def create_folders(Country_iso):
-    # replace this with the ID of the dataset you want to retrieve metadata for
-    dataset_id = f"cod-ab-{Country_iso}"
-    print(dataset_id)
+    if existing_pulls.totalCount == 0:
 
-    #reading particular country dataset from hdx and downloading the zip file
-    dataset = Dataset.read_from_hdx(dataset_id)
-    resources = dataset.get_resources()
-    for res in resources:
-        format_value = res['format']
-        if format_value == "SHP":
-            url = res['url']
-            print(url)
-            filenamezip = os.path.basename(url)
-            filename= filenamezip[:3]
-            filename = filename.upper()
-            path = os.path.join(download_dir, filename)
-            os.makedirs(path, exist_ok=True)
-            response = requests.get(url)
-            filepath = os.path.join(path, filenamezip)
-            with open(filepath, 'wb') as f:
-                f.write(response.content)
-            break
-    print("Resource URL %s downloaded to %s" % (url, path))
+        # create new branch based on upstream
+        fork.create_git_ref(ref='refs/heads/' + branchname, 
+                            sha=upstream.get_git_ref(ref='heads/' + upstream_branch).object.sha)
+        # check if file already exists in the repository
+        try:
+            file = fork.get_contents(dst, upstream_branch)
+            existing_sha = file.sha
+        except:
+            existing_sha = None
+        # create commit message and content for the file
+        commit_message = 'Updated {}'.format(dst)
+        content = open(src, mode='rb').read()
+        # create or update the file in the repository
+        if existing_sha is None:
+            fork.create_file(dst, commit_message, content, branch=branchname)
+        else:
+            # get sha of existing file by inspecting parent folder's git tree
+            # get_contents() is easier but downloads the entire file and fails
+            # for larger filesizes
+            dest_folder = os.path.dirname(dst)
+            tree_url = 'https://api.github.com/repos/{}/{}/git/trees/{}:{}'.format(fork.owner.login, fork.name, branchname, quote_plus(dest_folder))
+            tree = json.loads(urlopen(tree_url).read())
+            # loop files in tree until file is found
+            for member in tree['tree']:
+                if dst.endswith(member['path']):
+                    existing_sha = member['sha']
+                    break
+            fork.update_file(dst, commit_message, content, sha=existing_sha, branch=branchname)
 
-    #extracting the zip file
-    with zipfile.ZipFile(filepath, 'r') as zip_ref:
-        extrct_path = os.path.join(path,f"{filename}_EXT")
-        zip_ref.extractall(extrct_path)
+            #make pull request
+            pull = upstream.create_pull(title, body, base=upstream_branch, head=branchname)
+            
+            # return the url
+            pull_url = 'https://github.com/wmgeolab/geoBoundaries/pull/{}'.format(pull.number)
+            print(pull_url)
+            time.sleep(70)
 
-    #creating meta data file 
-    # send GET request to retrieve dataset metadata
-    url2 = f"https://data.humdata.org/api/3/action/package_show?id={dataset_id}"
-    response2 = requests.get(url2)
-
-    # check if the request was successful
-    if response2.status_code == 200:
-        # extract the metadata from the response JSON
-        metadata = response2.json()["result"]
     else:
-        # handle the error
-        print(f"Failed to retrieve metadata for dataset {dataset_id}: {response.status_code}")
+        for pull in existing_pulls:
+            if pull.body is not None and basename_hash in pull.body:
+                print('Pull request already exists.')
+                return
+
+        # create new branch based on upstream
+        print("entered into else")
+        fork.create_git_ref(ref='refs/heads/' + branchname, 
+                            sha=upstream.get_git_ref(ref='heads/' + upstream_branch).object.sha)
+        # check if file already exists in the repository
+        try:
+            file = fork.get_contents(dst, upstream_branch)
+            existing_sha = file.sha
+        except:
+            existing_sha = None
+        # create commit message and content for the file
+        commit_message = 'Updated {}'.format(dst)
+        content = open(src, mode='rb').read()
+        # create or update the file in the repository
+        if existing_sha is None:
+            fork.create_file(dst, commit_message, content, branch=branchname)
+        else:
+            # get sha of existing file by inspecting parent folder's git tree
+            # get_contents() is easier but downloads the entire file and fails
+            # for larger filesizes
+            dest_folder = os.path.dirname(dst)
+            tree_url = 'https://api.github.com/repos/{}/{}/git/trees/{}:{}'.format(fork.owner.login, fork.name, branchname, quote_plus(dest_folder))
+            tree = json.loads(urlopen(tree_url).read())
+            # loop files in tree until file is found
+            for member in tree['tree']:
+                if dst.endswith(member['path']):
+                    existing_sha = member['sha']
+                    break
+            fork.update_file(dst, commit_message, content, sha=existing_sha, branch=branchname)
+
+            #make pull request
+            pull = upstream.create_pull(title, body, base=upstream_branch, head=f'{fork.owner.login}:{branchname}')
+            
+            # return the url
+            pull_url = 'https://github.com/rohith4444/geoBoundaries/pull/{}'.format(pull.number)
+            print(pull_url)
+            time.sleep(70)
 
 
-    # Extract the specific metadata fields you want
-    source = metadata["dataset_source"]
-    cavets = metadata.get("caveats", "")
-    # Use regular expressions to replace the whitespace between sentences with a single space
-    cavets = re.sub(r'\s*([.?!:\]])\s*', r'\1 ', cavets)
-    cavets = cavets.replace("\n\n", " ")
-    Updated_cavets = f"Link to Notes:  https://data.humdata.org/dataset/{dataset_id}"
-    license = metadata["license_title"]
-    Updated_license = "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)"
-    contributor = metadata["organization"]["title"]
-    date = metadata["dataset_date"]
-    date = date[1:5]
+def generate_md5(file_name):
+    md5_hash = hashlib.md5(file_name.encode())
+    return md5_hash.hexdigest()
 
-    text = f"Boundary Representative of Year: {date}\n" \
-        f"ISO-3166-1 (Alpha-3): {filename}\n" \
-        f"Boundary Type: \n" \
-        f"Canonical Boundary Type Name:\n" \
-        f"Source 1: {source}\n" \
-        f"Source 2: {contributor}\n" \
-        f"Release Type: gbHumanitarian \n" \
-        f"License: {Updated_license if license == 'Creative Commons Attribution for Intergovernmental Organisations' else license}\n" \
-        f"License Notes:\n" \
-        f"License Source:  https://data.humdata.org/dataset/{dataset_id}\n" \
-        f"Link to Source Data:  https://data.humdata.org/dataset/{dataset_id}\n" \
-        f"Other Notes: { Updated_cavets if len(cavets)>95 else cavets}\n"
+def compare_files(file1_path, file2_path,basename):
+    if os.path.isfile(file1_path) and os.path.isfile(file2_path):
+        file1_extension = os.path.splitext(file1_path)[1]
+        file2_extension = os.path.splitext(file2_path)[1]
+        # if file1_extension and file2_extension in [".txt", ".csv", ".xml", ".json"]:
+        #     with open(file1_path, "r", encoding="utf-8") as f1, open(file2_path, "r", encoding="utf-8") as f2:
+        #         hash1 = hashlib.sha256(f1.read().encode()).hexdigest()
+        #         hash2 = hashlib.sha256(f2.read().encode()).hexdigest()
+        # else:
+        #     with open(file1_path, "rb") as f1, open(file2_path, "rb") as f2:
+        #         hash1 = hashlib.sha256(f1.read()).hexdigest()
+        #         hash2 = hashlib.sha256(f2.read()).hexdigest()
 
-    meta_path = os.path.join(extrct_path,"meta.txt")
-    with open(meta_path, "w") as f:
-        f.write(text)
+        try:
+            with open(file1_path, "r", encoding="utf-8") as f1, open(file2_path, "r", encoding="utf-8") as f2:
+                hash1 = hashlib.sha256(f1.read().encode()).hexdigest()
+                hash2 = hashlib.sha256(f2.read().encode()).hexdigest()
+        except UnicodeDecodeError:
+            with open(file1_path, "rb") as f1, open(file2_path, "rb") as f2:
+                hash1 = hashlib.sha256(f1.read()).hexdigest()
+                hash2 = hashlib.sha256(f2.read()).hexdigest()
 
+        if hash1 == hash2:
+            print(f"{file1_path} and {file2_path} are the same")
+        else:
+            print(f"{file1_path} and {file2_path} are different")
+            src=f"/sciclone/geounder/dev/geoBoundaries/scripts/geoBoundaryBot/external/SourceData/{basename}"
+            now = datetime.datetime.now()
+            month = now.strftime("%B")  # Month name, full version
+            today = date.today()
+            todaydate = today.strftime("%d")
+            year = today.strftime("%Y")
+            random_number = random.random()
+            dst = f"sourceData/gbHumanitarian/{basename}"
+            filename=os.path.splitext(basename)[0]
+            branchname=f"pull_{filename}_{year}_{month}{todaydate}_{random_number}"
+            base=basename.split(".")[0]
+            title=f"{base} UNOCHA Automated Retrieval {month} {todaydate} {year}"
+            basename_hash = generate_md5(basename)
+            body=f"""Pull request to update {basename} and the hash value {basename_hash}.
+                     This automated pull request has been generated to update the existing files with the most recent versions obtained from UNOCHA."""
+            retry_count = 0
+            max_retries=3
+            backoff_factor=90
+            while retry_count < max_retries:
+                try:
+                    submit_to_github(branchname, title, body, src, dst, basename_hash)
+                    break  # Exit the loop if the operation succeeds
+                except GithubException as e:
+                    print(f"Encountered GithubException: {e}")
+                    if e.status == 502:  # Retry only for 502 server error
+                        retry_count += 1
+                        wait_time = backoff_factor ** retry_count
+                        print(f"Retrying after {wait_time} seconds...")
+                        time.sleep(wait_time)
+                    else:
+                        raise  # Re-raise exception if it's not a 502 server error
 
-    #creating admin level directories sames as source directories
-    for adm_level in range(6):
-        adm_string = f"adm{adm_level}"
-        ext = ["cpg", "dbf", "prj", "shp", "shx"]
-        spt_path = os.path.join(path, f"{filename}_SPT")
-        print("separate path", spt_path)
-        adm_zip_path = os.path.join(spt_path, f"{filename}_{adm_string.upper()}")
-        print("admin zip path", adm_zip_path)      
-        for extension in ext:
-            files_with_extension = [file for file in os.listdir(extrct_path) if file.lower().endswith(f".{extension}") and adm_string in file]
-            print(files_with_extension)
-            if files_with_extension:
-                os.makedirs(adm_zip_path, exist_ok=True)
-                latest_modified_file = max(files_with_extension, key=lambda f: os.path.getmtime(os.path.join(extrct_path, f)))
-                copyfile = os.path.join(extrct_path, latest_modified_file)
-                destination_file_extension = os.path.splitext(latest_modified_file)[1]
-                destination_files_with_extension = [file for file in os.listdir(adm_zip_path) if file.lower().endswith(destination_file_extension)]
-                if not destination_files_with_extension:
-                    destination_file = os.path.join(adm_zip_path, latest_modified_file)
-                    shutil.copy2(copyfile, destination_file)
-                    print(f"Copied {latest_modified_file} to {adm_zip_path}")
-                else:
-                    print(f"File with extension '{destination_file_extension}' already exists in {adm_zip_path}")
-                for file in os.listdir(extrct_path):
-                    if file[-3:].lower() == "txt" and os.path.isdir(adm_zip_path):
-                        copyfile=os.path.join(extrct_path, file)
-                        with open(copyfile, "r") as f:
-                            contents = f.read()
-                            # Modify the contents of the text file as required
-                            modified_contents = contents.replace("Boundary Type: \n", f"Boundary Type: {adm_string.upper()}\n")
-                        with open(os.path.join(adm_zip_path, file), "w") as f:
-                            f.write(modified_contents)
-                        print(f"Copied {file} to {adm_zip_path} and added text")
-            else:
-                print(f"No files with extension '{extension}' found in {extrct_path}")
+            if retry_count == max_retries:
+                print(f"Failed after {max_retries} retries.")
 
-    #zipping the adminlevel directories
-    for directory in os.listdir(spt_path):
-        inpath=os.path.join(spt_path, directory)
-        outpath=os.path.join(source_dir, f"{directory}.zip")
-        zip_directory(inpath,outpath)
+            # submit_to_github(branchname,title,body,src,dst,basename_hash)              
 
 
 def generate_flow_run_name():
-
     date = datetime.datetime.now(datetime.timezone.utc)
 
     return f"On-{date:%A}-{date:%B}-{date.day}-{date.year}"
 
-@flow(name='UNOCHA: ETLOne',flow_run_name=generate_flow_run_name,log_prints=True)
-def countryList(Country_iso):
-    for country in Country_iso:
-        print(country)
-        create_folders(Country_iso=country)
+@flow(name='UNOCHA: Check and PullRequest',flow_run_name=generate_flow_run_name,log_prints=True)
+def compare_directories(dir1, dir2):
+    dir1_files = set(os.listdir(dir1))
+    dir2_files = set(os.listdir(dir2))
+    common_dirs = dir1_files.intersection(dir2_files)
 
-#ISO Codes of countries
-Country_iso=["bfa","bdi","col","cod","slv","eri","eth","irq","mli","moz","som","pse","sdn","ven","yem","nga","ukr"]
+    for file in common_dirs:
+        file1_path = os.path.join(dir1, file)
+        basename = os.path.basename(file1_path)
+        print(basename)
+        file2_path = os.path.join(dir2, file)
+        file1_extension = os.path.splitext(file1_path)[1]
+        file2_extension = os.path.splitext(file2_path)[1]
+        print(file1_path)
+        print(file1_extension)
+        print(file2_path)
+        print(file2_extension)
+        # Check if the file is a zip file
+        if file1_extension and file2_extension == ".zip":
+            with zipfile.ZipFile(file1_path, 'r') as zip1, zipfile.ZipFile(file2_path, 'r') as zip2:
+                zip1_files = set(zip1.namelist())
+                zip2_files = set(zip2.namelist())
+                print(zip1_files)
+                print(zip2_files)
 
-countryList(Country_iso)
+                for file1_path in zip1_files:
+                    file1_extension = os.path.splitext(file1_path)[1]
+                    matching_files = [file2_path for file2_path in zip2_files if os.path.splitext(file2_path)[1] == file1_extension]
+                    if len(matching_files) > 0:
+                        # Only proceed if there is at least one matching file with the same extension
+                        file2_path = matching_files[0]  # Pick the first matching file
+                        zip_file1_path = os.path.join(dir1, file1_path)
+                        zip_file2_path = os.path.join(dir2, file2_path)
+
+                        # Extract the file from the zip
+                        zip1.extract(file1_path, path=os.path.join(dir1))
+                        zip2.extract(file2_path, path=os.path.join(dir2))
+
+                        compare_files(zip_file1_path, zip_file2_path, basename)
+
+                        # Remove the extracted files
+                        os.remove(zip_file1_path)
+                        os.remove(zip_file2_path)
+        else:
+            compare_files(file1_path, file2_path, basename)
+
+
+compare_directories(downData,gitData)
+
+# if __name__ == "__main__":
+#     hi(downData,gitData)
+
